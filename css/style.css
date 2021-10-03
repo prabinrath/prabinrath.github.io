@@ -309,7 +309,7 @@ a.active {
     margin: 0 auto;
 }
 
-.about-border {
+/* .about-border {
     position: absolute;
     border: 10px solid #425BB5;
     width: 400px;
@@ -317,7 +317,7 @@ a.active {
     top: 40px;
     left: 50px;
     z-index: 1
-}
+} */
 
 
 /* experience section
@@ -579,10 +579,10 @@ a.active {
     text-align: center;
 }
 
-.portfolio_item img {
+/* .portfolio_item img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-}
+} */
 
 .portfolio-padding {
     padding: 50px 0;
@@ -631,7 +631,13 @@ a.active {
     line-height: 50px;
 }
 
-
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(235, 238, 243);
+    color: rgb(5, 4, 10);
+  }
+  
 /* contact
 ==================================================*/
 

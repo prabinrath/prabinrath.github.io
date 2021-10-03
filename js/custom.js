@@ -48,7 +48,7 @@ $(document).on("click","a[name='project']", function (e) {
     }
     else if(id=== "terranBot"){
         $("#projectHeading").text("Adaptive Rough Terran Bot");
-        $("#projectLocation").text("IIT Kharagpur");
+        $("#projectLocation").text("NIT Rourkela");
         $("#projectDesc").text("A manual bot capable of changing inter-wheel distance so as to cover roads of variable width and capable of gripping and lifting objects.");
         $("#projectVideo").attr("src", "https://www.youtube.com/embed/MGdWmmlzG-0");
         $("#projectGithub").text("");
