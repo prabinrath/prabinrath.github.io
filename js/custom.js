@@ -10,9 +10,13 @@ $(window).load(function () {
     });
 })
 
+
 $(document).on("click","a[name='project']", function (e) {
     var id = $(this).attr('id');
+    document.getElementById("projectPopup").style.visibility = "visible";
+    document.getElementById("resumePopup").style.visibility = "hidden";
     if(id === "chessProject"){
+        $("resumePDF").css("display", "none");  
         $("#projectHeading").text("Autonomous Chess Playing Robot");
         $("#projectLocation").text("NIT Rourkela");
         $("#projectDesc").text("A robot for playing the game of chess physically with an user autonomously. Powered with strong chess engines and interactive UI it provides all virtual game features and ensures the authenticity of the original board game.");
@@ -80,6 +84,17 @@ $(document).on("click","a[name='project']", function (e) {
         $("#projectGithub").text("https://github.com/prabinrath/cleo_codes/tree/master/Robotics/Core_Arduino/8_8_8_led_cube");
         $("#projectGithub").attr("href", "https://github.com/prabinrath/cleo_codes/tree/master/Robotics/Core_Arduino/8_8_8_led_cube");
         $("#githubP").text("Github Link to the source project - ");
+    }
+    else if(id==="resumeButton"){
+        $("#projectHeading").text("");
+        $("#projectLocation").text("");
+        $("#projectDesc").text("");
+        $("#projectVideo").attr("src", "");
+        $("#projectGithub").text("");
+        $("#githubP").text("");
+        document.getElementById("resumePopup").style.visibility = "visible";
+        document.getElementById("projectPopup").style.visibility = "hidden";
+       
     }
     return;
    
@@ -180,62 +195,7 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube").animatedModal();
-
-    // Contact Form 	
-
-    // validate contact form
-    $(function () {
-        $('#contact-form').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email: {
-                    required: true
-                },
-                phone: {
-                    required: false
-                },
-                message: {
-                    required: true
-                }
-
-            },
-            messages: {
-                name: {
-                    required: "This field is required",
-                    minlength: "your name must consist of at least 2 characters"
-                },
-                email: {
-                    required: "This field is required"
-                },
-                message: {
-                    required: "This field is required"
-                }
-            },
-            submitHandler: function (form) {
-                $(form).ajaxSubmit({
-                    type: "POST",
-                    data: $(form).serialize(),
-                    url: "process.php",
-                    success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor', 'default');
-                            $('#success').fadeIn();
-                        });
-                    },
-                    error: function () {
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $('#error').fadeIn();
-                        });
-                    }
-                });
-            }
-        });
-
-    });
+    $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube, #resumeButton").animatedModal();
+    $("#resumeButton").animatedModal();
+    
 });
