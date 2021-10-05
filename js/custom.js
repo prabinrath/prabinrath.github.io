@@ -85,6 +85,30 @@ $(document).on("click","a[name='project']", function (e) {
         $("#projectGithub").attr("href", "https://github.com/prabinrath/cleo_codes/tree/master/Robotics/Core_Arduino/8_8_8_led_cube");
         $("#githubP").text("Github Link to the source project - ");
     }
+    else if(id=== "naoRobot"){
+        $("#projectHeading").text("Nao Robot");
+        $("#projectLocation").text("IEEE ROMAN Conference");
+        $("#projectDesc").text("My first research paper got accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action");
+        $("#projectVideo").attr("src", "https://www.youtube.com/embed/D5JEbNLVAhc");
+        $("#projectGithub").text("");
+        $("#githubP").text("");
+    }
+    else if(id=== "sophiaRobot"){
+        $("#projectHeading").text("Sphia Robot");
+        $("#projectLocation").text("IEEE ROMAN Conference");
+        $("#projectDesc").text("My first research paper got accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action");
+        $("#projectVideo").attr("src", "https://www.youtube.com/embed/ivn37xJeaeU");
+        $("#projectGithub").text("");
+        $("#githubP").text("");
+    }
+    else if(id=== "kukaRobot"){
+        $("#projectHeading").text("Kuka Robot");
+        $("#projectLocation").text("IEEE ROMAN Conference");
+        $("#projectDesc").text("My first research paper got accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action");
+        $("#projectVideo").attr("src", "https://www.youtube.com/embed/OlhGU5ppdws");
+        $("#projectGithub").text("");
+        $("#githubP").text("");
+    }
     else if(id==="resumeButton"){
         $("#projectHeading").text("");
         $("#projectLocation").text("");
@@ -195,7 +219,7 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube, #resumeButton").animatedModal();
+    $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube, #resumeButton, #kukaRobot, #sophiaRobot, #naoRobot").animatedModal();
     $("#resumeButton").animatedModal();
     
 });
