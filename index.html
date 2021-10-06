@@ -86,7 +86,7 @@
                 </p>
                 <a></a>
                 <br/>
-               <a id="resumeButton" href="#animatedModal" name="project"><button class="btn btn-glance" style="width: 50%; text-align: center;">My CV</button></a>
+               <a id="resumeButton" href="#"><button class="btn btn-glance" style="width: 50%; text-align: center;" onclick="openPDF()">My CV</button></a>
                 <div class="h-50"></div>     
                                 
                 
@@ -427,9 +427,9 @@
                             <br />
                             <br /> 
                         </div>
-                        <div id="resumePopup">
+                        <!-- <div id="resumePopup">
                             <iframe style="position:absolute;top:0px;width:100%;height:100vh;" id="resumePDF" src="img/Neelam_Mahapatro_CV.pdf"></iframe>
-                        </div>
+                        </div> -->
                     </div>
                 </div>                
             </div>
@@ -467,6 +467,11 @@
             .fadeIn(500,function(){
                 setTimeout(doSlideshow,4000);
             });
+        }
+
+        function openPDF(){
+            var pdfPath = "img/Neelam_Mahapatro_CV.pdf";
+            window.open(pdfPath,'_blank');
         }
     </script> 
 </body>

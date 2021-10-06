@@ -285,7 +285,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/home-bg-2.jpg);
+    /* background: url(../img/home-bg-2.jpg); */
     background-size: cover;
     margin-top: 13vh;
     height: 100vh;

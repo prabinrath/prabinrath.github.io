@@ -14,7 +14,7 @@ $(window).load(function () {
 $(document).on("click","a[name='project']", function (e) {
     var id = $(this).attr('id');
     document.getElementById("projectPopup").style.visibility = "visible";
-    document.getElementById("resumePopup").style.visibility = "hidden";
+    //document.getElementById("resumePopup").style.visibility = "hidden";
     if(id === "chessProject"){
         $("resumePDF").css("display", "none");  
         $("#projectHeading").text("Autonomous Chess Playing Robot");
@@ -108,17 +108,6 @@ $(document).on("click","a[name='project']", function (e) {
         $("#projectVideo").attr("src", "https://www.youtube.com/embed/OlhGU5ppdws");
         $("#projectGithub").text("");
         $("#githubP").text("");
-    }
-    else if(id==="resumeButton"){
-        $("#projectHeading").text("");
-        $("#projectLocation").text("");
-        $("#projectDesc").text("");
-        $("#projectVideo").attr("src", "");
-        $("#projectGithub").text("");
-        $("#githubP").text("");
-        document.getElementById("resumePopup").style.visibility = "visible";
-        document.getElementById("projectPopup").style.visibility = "hidden";
-       
     }
     return;
    
