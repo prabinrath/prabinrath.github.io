@@ -85,6 +85,9 @@ body {
 
 /* preloader
 ==================================================*/
+.preload-img{
+    display: none;
+}
 
 #preloader {
     position: fixed;
