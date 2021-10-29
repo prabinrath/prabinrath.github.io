@@ -52,16 +52,36 @@
     <!-- header -->
     <header class="navbar-fixed-top">
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">career</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <div class="nav-left-first">
+                <h2>Prabin Kumar Rath</h2>  
+                <!-- <h3>Robotics Enthusiast</h3>                   -->
+            </div>
+            <div class="nav-right">
+                <ul>              
+                    <li><a href="#about">About</a></li>  
+                    <li><a href="#experience">career</a></li> 
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>  
+                </ul>  
+            </div>
+            <div  id="responsiveNavDiv" class="nav-icon">
+                <ul><li>
+                <a href="#navIcon"><i class="fas fa-bars"></i></a>  
+                </li></ul>
+            </div>
+        </nav>             
+    </header> 
+    <div style="z-index: 1;" class="nav-responsive">
+        <ul>                   
+            <li style="margin-bottom: 2vh; padding-top: 4vh; justify-content: center;"><a href="#about">About</a></li>  
+            <li style="margin-bottom: 2vh;"><a href="#experience">career</a></li> 
+            <li style="margin-bottom: 2vh;"><a href="#projects">projects</a></li>
+            <li style="margin-bottom: 2vh;"><a href="#contact">contact</a></li>  
+        </ul> 
+    </div>  
     <!-- ./header -->
-    
+               
+
     <!-- home --> 
     <div class="section" id="home" data-stellar-background-ratio="0.5">
     </div>
@@ -72,11 +92,7 @@
         <div class="container">
             <div class="col-md-6" data-aos="fade-up">
                 
-                
-                <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
-                    <h2>Prabin Kumar Rath</h2>
-                    <h3>Robotics Enthusiast</h3> 
-                </div>
+                <h1 class="size-50">About Me</h1>                
                 <div class="h-50"></div>                
                 
                 <p>Myself Prabin Kumar Rath a B.Tech graduate from National Institute of Technology, Rourkela. I am a tech nerd with crazy enthusiasm for Robotics and software development.
@@ -86,7 +102,7 @@
                 </p>
                 <a></a>
                 <br/>
-               <a id="resumeButton" href="#animatedModal" name="project"><button class="btn btn-glance" style="width: 50%; text-align: center;">My CV</button></a>
+               <a href="#"><button class="btn btn-glance" style="width: 50%; text-align: center;" onclick="openPDF()">My CV</button></a>
                 <div class="h-50"></div>     
                                 
                 
@@ -115,10 +131,54 @@
         <div class="container">
             <div class="col-md-12">
                 
-                <h1 class="size-50">My <br /> Career</h1>
+                <h1 class="size-50">My Career</h1>
                 <div class="h-50"></div>
             </div>
-            <div class="col-md-12">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="career-item">
+                        <span><img style="width: 35%; height: 35%;" src="img/icons/wf.png"/></span>
+                        <h4>Software Engineer Senior Analyst</h4>
+                        <h4><strong>Wells Fargo EGS</strong></h4>
+                        <h4>August 2020 - Current</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="career-item">
+                        <span><img  style="width: 37%; height: 37%; " src="img/icons/ucalgary.png"/></span>
+                        <h4>Robotics Research Intern</h4>
+                        <h4><strong>University of Calgary</strong></h4>
+                        <h4>May 2019 - July 2019</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="career-item">
+                        <span><img  style="width: 37%; height: 37%; margin-top: -1.5vh;"src="img/icons/iitkgp.png"/></span>
+                        <h4>Robotics Research Intern</h4>
+                        <h4><strong>IIT, Kharagpur</strong></h4>
+                        <h4>December 2018 - January 2019</h4>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-3">
+                    <div class="career-item">
+                        <span><img src="img/icons/nitr.png"/></span>
+                        <h4>Robotics Research Intern</h4>
+                        <h4><strong>Indian Institute of Technology, Kharagpur</strong></h4>
+                        <h4>December 2018 - January 2019</h4>
+                        <h5><strong> ROS, Rehabilititation Robotics, Heptics, Robot Control </strong></h5>                             
+                    </div>
+                </div> -->
+                <div class="col-sm-3">
+                    <div class="career-item">
+                        <span><img style="width: 45%; height: 45%; margin-top: -2vh;" src="img/icons/nitr.png"/></span>
+                        <h4>B.Tech Computer Science and Engineering</h4>
+                        <h4><strong>NIT, Rourkela</strong></h4>
+                        <h4>August 2016 - May 2020</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="col-md-12">
                 <ul class="timeline">
                     <li class="timeline-event" data-aos="fade-up">
                         <label class="timeline-event-icon"><img src="img/icons/wf.png" width="5%" height="5%"></label>
@@ -171,7 +231,7 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- ./experience -->
@@ -181,7 +241,7 @@
         <div class="container">
             <div class="col-md-12">
                 
-                <h1 class="size-50">My <br /> Projects</h1> 
+                <h1 class="size-50">Media Collection</h1> 
             </div>
             <!-- main container -->
             <div class="main-container portfolio-inner clearfix">
@@ -196,7 +256,7 @@
                                     <li><a href="" data-filter=".research">Reserach</a></li>
                                     <li><a href="" data-filter=".diy">DIY</a></li>                                    
                                     <li><a href="" data-filter=".projects">Capstone</a></li>
-                                    <li><a href="" data-filter=".collection">Collection</a></li>
+                                    <li><a href="" data-filter=".collection">Exploration</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -314,7 +374,7 @@
                             <div class="col-md-4 col-sm-6 collection">
                                 <a id="kukaRobot" href="#animatedModal" name="project" class="portfolio_item"> 
                                     <div class="projectImage image-cover">
-                                        <img src="img/portfolio/kukaRobot.jpg" alt="image" class="img-responsive" />
+                                        <img src="img/portfolio/blank.png" alt="image" class="img-responsive" />
                                     </div>
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
@@ -327,7 +387,7 @@
                             <div class="col-md-4 col-sm-6 collection">
                                 <a id="sophiaRobot" href="#animatedModal" name="project" class="portfolio_item"> 
                                     <div class="projectImage image-cover">
-                                        <img src="img/portfolio/sophiaRobot.jpg" alt="image" class="img-responsive" />
+                                        <img src="img/portfolio/blank.png" alt="image" class="img-responsive" />
                                     </div>
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
@@ -427,9 +487,9 @@
                             <br />
                             <br /> 
                         </div>
-                        <div id="resumePopup">
+                        <!-- <div id="resumePopup">
                             <iframe style="position:absolute;top:0px;width:100%;height:100vh;" id="resumePDF" src="img/Neelam_Mahapatro_CV.pdf"></iframe>
-                        </div>
+                        </div> -->
                     </div>
                 </div>                
             </div>
@@ -467,6 +527,11 @@
             .fadeIn(500,function(){
                 setTimeout(doSlideshow,4000);
             });
+        }
+
+        function openPDF(){
+            var pdfPath = "img/Neelam_Mahapatro_CV.pdf";
+            window.open(pdfPath,'_blank');
         }
     </script> 
 </body>
