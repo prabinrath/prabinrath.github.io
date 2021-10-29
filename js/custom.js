@@ -142,7 +142,17 @@ $(document).ready(function () {
     nav.find('a').on('click', function () {
         var $el = $(this),
             id = $el.attr('href');
-
+       
+        if(id === "#navIcon"){
+            var height = $(window).scrollTop();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if(height === 0)
+            {
+                $(".nav-responsive").toggle( 'slow');
+            }
+            return;
+        }
+        
         $('html, body').animate({
             scrollTop: $(id).offset().top - nav_height + 2
         }, 600);
@@ -150,20 +160,22 @@ $(document).ready(function () {
         return false;
     });
 
-
+    $(".navbar-fixed-top").addClass("bg-nav");
     // Menu opacity
-    if ($(window).scrollTop() > 80) {
+    
+    /*
+    if ($(window).scrollTop() > 0) {
         $(".navbar-fixed-top").addClass("bg-nav");
     } else {
         $(".navbar-fixed-top").removeClass("bg-nav");
     }
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 80) {
+        if ($(window).scrollTop() > 0) {
             $(".navbar-fixed-top").addClass("bg-nav");
         } else {
             $(".navbar-fixed-top").removeClass("bg-nav");
         }
-    });
+    });*/
 
 
 
@@ -209,6 +221,5 @@ $(document).ready(function () {
 
     //animatedModal
     $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube, #resumeButton, #kukaRobot, #sophiaRobot, #naoRobot").animatedModal();
-    $("#resumeButton").animatedModal();
     
 });
