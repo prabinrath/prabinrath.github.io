@@ -197,9 +197,10 @@ $(document).ready(function () {
 
     //  isotope
     $('#projects').waitForImages(function () {
+        var defultSelector = $('ul#portfolio_filter').find('li.active')
         var $container = $('.portfolio_container');
         $container.isotope({
-            filter: '*',
+            filter: defultSelector,
         });
 
         $('.portfolio_filter a').click(function () {
