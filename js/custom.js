@@ -109,6 +109,24 @@ $(document).on("click","a[name='project']", function (e) {
         $("#projectGithub").text("");
         $("#githubP").text("");
     }
+    else if(id ==="datmoPipeline"){
+        $("#projectHeading").text(" A novel DATMO pipeline");
+        $("#projectLocation").text("Research at University of Calgary ");
+        $("#projectDesc").text("This paper presents a moving object detection pipeline based on relative motion and a novel confidence tracking approach that detects point clusters corresponding to independent moving entities around the robot.");
+        $("#projectVideo").attr("src", "https://www.youtube.com/embed/ix0gz_FZqFg");
+        $("#projectGithub").text("https://github.com/prabinrath/dynamicslamtool");
+        $("#projectGithub").attr("href","https://github.com/prabinrath/dynamicslamtool");        
+        $("#githubP").text("Github Link to the source project -");
+    }
+    else if(id === "cdsrProject"){
+        $("#projectHeading").text("CDSR 2020 and DICTA 2020 paper presentation");
+        $("#projectLocation").text("Research at University of Calgary ");
+        $("#projectDesc").text("This paper presents a moving object detection pipeline based on relative motion and a novel confidence tracking approach that detects point clusters corresponding to independent moving entities around the robot.");
+        $("#projectVideo").attr("src", "https://www.youtube.com/embed/ix0gz_FZqFg");
+        $("#projectGithub").text("https://github.com/prabinrath/dynamicslamtool");
+        $("#projectGithub").attr("href","https://github.com/prabinrath/dynamicslamtool");        
+        $("#githubP").text("Github Link to the source project -");
+    }
     return;
    
 });
@@ -197,10 +215,9 @@ $(document).ready(function () {
 
     //  isotope
     $('#projects').waitForImages(function () {
-        var defultSelector = $('ul#portfolio_filter').find('li.active')
         var $container = $('.portfolio_container');
         $container.isotope({
-            filter: defultSelector,
+            filter: ".research",
         });
 
         $('.portfolio_filter a').click(function () {
@@ -221,6 +238,6 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube, #resumeButton, #kukaRobot, #sophiaRobot, #naoRobot").animatedModal();
+    $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube, #resumeButton, #kukaRobot, #sophiaRobot, #naoRobot, #cdsrProject, #datmoPipeline").animatedModal();
     
 });

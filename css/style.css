@@ -543,6 +543,15 @@ a.active {
     background-color: white;
 }
 
+.carousel-indicators .active{
+    background-color: #4960b6;
+}
+
+.carousel-indicators li{
+    border-color: #4960b6;
+     /* background-color:black; */
+}
+
 /* projects section
 ==================================================*/
 
