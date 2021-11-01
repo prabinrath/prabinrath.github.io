@@ -950,7 +950,9 @@ fieldset {
 }
 
 @media screen and (max-width: 800px) {
-    
+    .item img{
+        margin-top: 30%;
+    }
     /* .nav-right a.icon{
         display: block;
         float: right;
@@ -961,7 +963,6 @@ fieldset {
     
     .nav-responsive{
         background-color: white;
-        display: block;  
         position: sticky;    
         margin-top: 12vh;
         margin-left: 5vh;
