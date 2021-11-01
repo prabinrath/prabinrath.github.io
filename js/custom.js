@@ -17,11 +17,11 @@ $(document).on("click","a[name='project']", function (e) {
     document.getElementById("projectPopup").style.visibility = "visible";
     $('#projectVideosChildId').remove();
     if(id === "chessProject"){
-        iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/X8OpdWKrOxo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';    
+        iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/RYqMDQ5mVBQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';    
         $("resumePDF").css("display", "none");  
         $("#projectHeading").text("Autonomous Chess Playing Robot");
-        $("#projectLocation").text("NIT Rourkela");
-        $("#projectDesc").text("A robot for playing the game of chess physically with an user autonomously. Powered with strong chess engines and interactive UI it provides all virtual game features and ensures the authenticity of the original board game.");
+        $("#projectLocation").text("Research at NIT Rourkela");
+        $("#projectDesc").text("A robot for playing the game of chess physically with an user. Powered with strong chess engines and interactive UI it provides all virtual game features and ensures the authenticity of the original board game.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         //$("#projectVideo").attr("src", "https://www.youtube.com/embed/X8OpdWKrOxo");
         $("#projectGithub").text("https://github.com/prabinrath/Roborex_Chess");
@@ -31,8 +31,8 @@ $(document).on("click","a[name='project']", function (e) {
     else if(id === "underWaterROV"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/7OgH7KmpCG4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';    
         $("#projectHeading").text("Underwater ROV");
-        $("#projectLocation").text("NIT Rourkela");
-        $("#projectDesc").text("A ROV(Remotely Operated Vehicle) for underwater exploration controlled from an Android app.");
+        $("#projectLocation").text("DIY project at NIT Rourkela");
+        $("#projectDesc").text("A ROV (Remotely Operated Vehicle) for underwater exploration which can be controlled from an Android app.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("");
         $("#githubP").text("");
@@ -40,18 +40,18 @@ $(document).on("click","a[name='project']", function (e) {
     else if(id === "dotMatrixPrinter"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/DudBchBL2wo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("2D Dot Matrix Printer");
-        $("#projectLocation").text("NIT Rourkela");
-        $("#projectDesc").text("A 2D Dot matrix printer is a DIY project made from old CD drives. ");
+        $("#projectLocation").text("DIY project at NIT Rourkela");
+        $("#projectDesc").text("A 2D Dot matrix printer is a DIY project made from old CD drives.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
-        $("#projectGithub").text("https://github.com/prabinrath/DotMatrix");
-        $("#projectGithub").attr("href", "https://github.com/prabinrath/cleo_codes/tree/master/Robotics/core_ROS");
+        $("#projectGithub").text("https://github.com/prabinrath/Arduino_Projects");
+        $("#projectGithub").attr("href", "https://github.com/prabinrath/Arduino_Projects");
         $("#githubP").text("Github Link to the source project - ");
     }
     else if (id==="wirelessBot"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/Ir5Be_2lIv8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
-        $("#projectHeading").text("Semi Autonomous wireless Bot");
-        $("#projectLocation").text("IIT Kharagpur");
-        $("#projectDesc").text("A blue-tooth control bot with on board FSR (Force Sensitive Resistor) for autonomous weight detection and indication LEDs.");
+        $("#projectHeading").text("Semi Autonomous Wireless Bot");
+        $("#projectLocation").text("Robotics competition at IIT Kharagpur");
+        $("#projectDesc").text("A Bluetooth controlled robot with on board FSR (Force Sensitive Resistor) for weight detection. It has indication LEDs to prompt the user about the detected weights.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("");
         $("#githubP").text("");
@@ -59,8 +59,8 @@ $(document).on("click","a[name='project']", function (e) {
     else if(id=== "terranBot"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/MGdWmmlzG-0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("Adaptive Rough Terran Bot");
-        $("#projectLocation").text("NIT Rourkela");
-        $("#projectDesc").text("A manual bot capable of changing inter-wheel distance so as to cover roads of variable width and capable of gripping and lifting objects.");
+        $("#projectLocation").text("DIY project at NIT Rourkela");
+        $("#projectDesc").text("A manual robot capable of changing inter-wheel distance so as to cover roads of variable width. It also has the capability to grip and lift objects.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("");
         $("#githubP").text("");
@@ -69,8 +69,8 @@ $(document).on("click","a[name='project']", function (e) {
     else if(id=== "roomAutomation"){        
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/lEjgfBhAbZ0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("Room Automation Module");
-        $("#projectLocation").text("NIT Rourkela");
-        $("#projectDesc").text("A Room Automation Module for switching electrical appliances remotely from Web, blue-tooth, and IR.");
+        $("#projectLocation").text("Research at NIT Rourkela");
+        $("#projectDesc").text("A Room Automation Module for switching electrical appliances remotely through Web, Bluetooth, and IR.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("https://github.com/prabinrath/Room_Automation");
         $("#projectGithub").attr("href", "https://github.com/prabinrath/Room_Automation");
@@ -79,8 +79,8 @@ $(document).on("click","a[name='project']", function (e) {
     else if(id=== "IRobstacledetector"){        
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/ZxR40xoD42Q" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("Manual Bot with IR obstacle detector");
-        $("#projectLocation").text("NIT Rourkela");
-        $("#projectDesc").text("A manual bot with IR obstacle detection controlled through a remote made from DPDT switches.");
+        $("#projectLocation").text("DIY project at NIT Rourkela");
+        $("#projectDesc").text("A manual robot with IR obstacle detection ability which is controlled through a remote made from DPDT switches.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("");
         $("#githubP").text("");
@@ -88,18 +88,18 @@ $(document).on("click","a[name='project']", function (e) {
     else if(id=== "ledCube"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/p_xQauBz7h0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("8*8*8 LED Cube");
-        $("#projectLocation").text("Home - Summer Vacation");
+        $("#projectLocation").text("DIY project at NIT Rourkela");
         $("#projectDesc").text("A 8*8*8 LED cube made using 9 shift registers 74HC595 and Arduino Nano.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
-        $("#projectGithub").text("https://github.com/prabinrath/cleo_codes/tree/master/Robotics/Core_Arduino/8_8_8_led_cube");
-        $("#projectGithub").attr("href", "https://github.com/prabinrath/cleo_codes/tree/master/Robotics/Core_Arduino/8_8_8_led_cube");
+        $("#projectGithub").text("https://github.com/prabinrath/Arduino_Projects");
+        $("#projectGithub").attr("href", "https://github.com/prabinrath/Arduino_Projects");
         $("#githubP").text("Github Link to the source project - ");
     }
     else if(id=== "naoRobot"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/D5JEbNLVAhc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("Nao Robot");
         $("#projectLocation").text("IEEE ROMAN Conference");
-        $("#projectDesc").text("My first research paper got accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action");
+        $("#projectDesc").text("My first research paper was accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("");
         $("#githubP").text("");
@@ -108,7 +108,7 @@ $(document).on("click","a[name='project']", function (e) {
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/ivn37xJeaeU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("Sphia Robot");
         $("#projectLocation").text("IEEE ROMAN Conference");
-        $("#projectDesc").text("My first research paper got accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action");
+        $("#projectDesc").text("My first research paper was accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("");
         $("#githubP").text("");
@@ -117,7 +117,7 @@ $(document).on("click","a[name='project']", function (e) {
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/OlhGU5ppdws" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("Kuka Robot");
         $("#projectLocation").text("IEEE ROMAN Conference");
-        $("#projectDesc").text("My first research paper got accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action");
+        $("#projectDesc").text("My first research paper got accepted at the IEEE ROMAN-2019 conference. I captured some awesome robots with my camera which were put on display at the demonstration aisle. Have a look at these wonderful machines in action.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("");
         $("#githubP").text("");
@@ -126,7 +126,7 @@ $(document).on("click","a[name='project']", function (e) {
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/ix0gz_FZqFg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text(" A novel DATMO pipeline");
         $("#projectLocation").text("Research at University of Calgary ");
-        $("#projectDesc").text("This paper presents a moving object detection pipeline based on relative motion and a novel confidence tracking approach that detects point clusters corresponding to independent moving entities around the robot.");
+        $("#projectDesc").text("A moving object detection pipeline based on relative motion and a novel confidence tracking approach that detects point clusters corresponding to independent moving entities around the robot.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("https://github.com/prabinrath/dynamicslamtool");
         $("#projectGithub").attr("href","https://github.com/prabinrath/dynamicslamtool");        
@@ -136,10 +136,10 @@ $(document).on("click","a[name='project']", function (e) {
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/cT6YomIWiJ0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
         $("#projectHeading").text("CDSR 2020 and DICTA 2020 paper presentation");
         $("#projectLocation").text("Research at University of Calgary ");
-        $("#projectDesc").text("This paper presents a moving object detection pipeline based on relative motion and a novel confidence tracking approach that detects point clusters corresponding to independent moving entities around the robot.");
+        $("#projectDesc").text("A moving object detection pipeline based on relative motion and a novel confidence tracking approach that detects point clusters corresponding to independent moving entities around the robot.");
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
-        $("#projectGithub").text("https://github.com/prabinrath/fist_lab_arm");
-        $("#projectGithub").attr("href","https://github.com/prabinrath/fist_lab_arm");        
+        $("#projectGithub").text("https://github.com/prabinrath/dynamicslamtool");
+        $("#projectGithub").attr("href","https://github.com/prabinrath/dynamicslamtool");        
         $("#githubP").text("Github Link to the source project -");
     }
     else if(id === "btechThesis"){
@@ -150,10 +150,10 @@ $(document).on("click","a[name='project']", function (e) {
         }
         $("#projectHeading").text("End Effector Stabilization of Robotic Arms");
         $("#projectLocation").text("Research at NIT Rourkela ");
-        $("#projectDesc").text("End-effector stabilization of a robotic arm on a dynamic base frame. The stability of the end-effector has been modeled mathematically and a closed-loop feedback control architecture has been used for canceling out the base motion effects on the end-effector of the mounted arm.");
+        $("#projectDesc").text("End effector stabilization of robotic arms mounted on mobile robots. The stability of the end effector has been modeled mathematically and a closed-loop feedback control architecture has been used for canceling out the base motion effects on the end effector of the mounted arm.");
         $('#projectVideosID').append($('<div id="projectVideosChildId">'+iFramediv+'</div>'));
-        $("#projectGithub").text("https://github.com/prabinrath/dynamicslamtool");
-        $("#projectGithub").attr("href","https://github.com/prabinrath/dynamicslamtool");        
+        $("#projectGithub").text("https://github.com/prabinrath/fist_lab_arm");
+        $("#projectGithub").attr("href","https://github.com/prabinrath/fist_lab_arm");        
         $("#githubP").text("Github Link to the source project -");
     }
     return;
