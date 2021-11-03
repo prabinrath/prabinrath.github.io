@@ -26,7 +26,7 @@ $(document).on("click","a[name='project']", function (e) {
         //$("#projectVideo").attr("src", "https://www.youtube.com/embed/X8OpdWKrOxo");
         $("#projectGithub").text("https://github.com/prabinrath/Roborex_Chess");
         $("#projectGithub").attr("href", "https://github.com/prabinrath/Roborex_Chess");
-        $("#githubP").text("Github Link to the source project - ");
+        $("#githubP").text("Github Link to the source project:  ");
     }
     else if(id === "underWaterROV"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/7OgH7KmpCG4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';    
@@ -45,7 +45,7 @@ $(document).on("click","a[name='project']", function (e) {
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("https://github.com/prabinrath/Arduino_Projects");
         $("#projectGithub").attr("href", "https://github.com/prabinrath/Arduino_Projects");
-        $("#githubP").text("Github Link to the source project - ");
+        $("#githubP").text("Github Link to the source project:  ");
     }
     else if (id==="wirelessBot"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/Ir5Be_2lIv8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
@@ -74,7 +74,7 @@ $(document).on("click","a[name='project']", function (e) {
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("https://github.com/prabinrath/Room_Automation");
         $("#projectGithub").attr("href", "https://github.com/prabinrath/Room_Automation");
-        $("#githubP").text("Github Link to the source project - ");
+        $("#githubP").text("Github Link to the source project:  ");
     }
     else if(id=== "IRobstacledetector"){        
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/ZxR40xoD42Q" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
@@ -93,7 +93,7 @@ $(document).on("click","a[name='project']", function (e) {
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("https://github.com/prabinrath/Arduino_Projects");
         $("#projectGithub").attr("href", "https://github.com/prabinrath/Arduino_Projects");
-        $("#githubP").text("Github Link to the source project - ");
+        $("#githubP").text("Github Link to the source project:  ");
     }
     else if(id=== "naoRobot"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/D5JEbNLVAhc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
@@ -130,7 +130,7 @@ $(document).on("click","a[name='project']", function (e) {
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("https://github.com/prabinrath/dynamicslamtool");
         $("#projectGithub").attr("href","https://github.com/prabinrath/dynamicslamtool");        
-        $("#githubP").text("Github Link to the source project -");
+        $("#githubP").text("Github Link to the source project: ");
     }
     else if(id === "cdsrProject"){
         iFramediv = '<iframe id="projectVideo" src="https://www.youtube.com/embed/cT6YomIWiJ0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';   
@@ -140,7 +140,7 @@ $(document).on("click","a[name='project']", function (e) {
         $('#projectVideosID').append($('<div id="projectVideosChildId"><div class="video-container">'+iFramediv+'</div></div>'));
         $("#projectGithub").text("https://github.com/prabinrath/dynamicslamtool");
         $("#projectGithub").attr("href","https://github.com/prabinrath/dynamicslamtool");        
-        $("#githubP").text("Github Link to the source project -");
+        $("#githubP").text("Github Link to the source project: ");
     }
     else if(id === "btechThesis"){
         var youTubeLinks = ["fT_pL9pibi0", "hQmdx6A4pto", "3IbjEBPWKpk", "66R0jPZouVk", "hnI_WNzaWXo"];
@@ -154,7 +154,7 @@ $(document).on("click","a[name='project']", function (e) {
         $('#projectVideosID').append($('<div id="projectVideosChildId">'+iFramediv+'</div>'));
         $("#projectGithub").text("https://github.com/prabinrath/fist_lab_arm");
         $("#projectGithub").attr("href","https://github.com/prabinrath/fist_lab_arm");        
-        $("#githubP").text("Github Link to the source project -");
+        $("#githubP").text("Github Link to the source project: ");
     }
     else if(id === "cartPoleProject"){
         var youTubeLinks = ["pHIsdZSPXUQ", "c03xXi8UCio"];
@@ -162,13 +162,13 @@ $(document).on("click","a[name='project']", function (e) {
         for(var i=0; i<youTubeLinks.length; i++){
             iFramediv = iFramediv + '<div class="video-container" style="margin-bottom:5vh"><iframe id="projectVideo'+i+'" src="https://www.youtube.com/embed/'+youTubeLinks[i]+'" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
         }
-        $("#projectHeading").text("Cartpole Optimization");
+        $("#projectHeading").text("The Cartpole Control Problem");
         $("#projectLocation").text("Research at NIT Rourkela ");
         $("#projectDesc").text("Trapezoidal collocation based trajectory optimization for the cart pole swing-up problem and Balancing the inverted pendulum on a cart pole system using Linear Quadratic Regulator.");
         $('#projectVideosID').append($('<div id="projectVideosChildId">'+iFramediv+'</div>'));
-        $("#projectGithub").text("https://github.com/prabinrath/Learning-Robotics-Matlab/tree/main/Optimal%20Control/cart_pole");
-        $("#projectGithub").attr("href","https://github.com/prabinrath/Learning-Robotics-Matlab/tree/main/Optimal%20Control/cart_pole");        
-        $("#githubP").text("Github Link to the source project -");
+        $("#projectGithub").text("https://github.com/prabinrath/Learning-Robotics-Matlab");
+        $("#projectGithub").attr("href","https://github.com/prabinrath/Learning-Robotics-Matlab");        
+        $("#githubP").text("Github Link to the source project: ");
     }
     return;
    
