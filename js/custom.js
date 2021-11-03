@@ -156,6 +156,20 @@ $(document).on("click","a[name='project']", function (e) {
         $("#projectGithub").attr("href","https://github.com/prabinrath/fist_lab_arm");        
         $("#githubP").text("Github Link to the source project -");
     }
+    else if(id === "cartPoleProject"){
+        var youTubeLinks = ["pHIsdZSPXUQ", "c03xXi8UCio"];
+        iFramediv = "";
+        for(var i=0; i<youTubeLinks.length; i++){
+            iFramediv = iFramediv + '<div class="video-container" style="margin-bottom:5vh"><iframe id="projectVideo'+i+'" src="https://www.youtube.com/embed/'+youTubeLinks[i]+'" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        }
+        $("#projectHeading").text("Cartpole Optimization");
+        $("#projectLocation").text("Research at NIT Rourkela ");
+        $("#projectDesc").text("Trapezoidal collocation based trajectory optimization for the cart pole swing-up problem and Balancing the inverted pendulum on a cart pole system using Linear Quadratic Regulator.");
+        $('#projectVideosID').append($('<div id="projectVideosChildId">'+iFramediv+'</div>'));
+        $("#projectGithub").text("https://github.com/prabinrath/Learning-Robotics-Matlab/tree/main/Optimal%20Control/cart_pole");
+        $("#projectGithub").attr("href","https://github.com/prabinrath/Learning-Robotics-Matlab/tree/main/Optimal%20Control/cart_pole");        
+        $("#githubP").text("Github Link to the source project -");
+    }
     return;
    
 });
@@ -267,6 +281,6 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube, #resumeButton, #kukaRobot, #sophiaRobot, #naoRobot, #cdsrProject, #datmoPipeline, #btechThesis").animatedModal();
+    $("#underWaterROV, #chessProject, #dotMatrixPrinter, #wirelessBot, #terranBot, #roomAutomation, #IRobstacledetector, #ledCube, #resumeButton, #kukaRobot, #sophiaRobot, #naoRobot, #cdsrProject, #datmoPipeline, #btechThesis, #cartPoleProject").animatedModal();
     
 });
