@@ -363,6 +363,9 @@ a.active {
 
 .about-img-div img {
     margin: 0 auto;
+    height: 80%;
+    width: 80%;
+    margin-top: 15vh;
 }
 
 /* .about-border {
