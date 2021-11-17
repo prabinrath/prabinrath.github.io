@@ -297,7 +297,7 @@ nav li a {
     border-bottom: 1px solid #f3f3f3
 }
 nav{
-background-color: white;
+background-color: black; /*Theme change*/
 width: 100%;
 }
 
@@ -384,7 +384,7 @@ a.active {
 
 #experience {
     padding: 100px 0;
-    background: #f3f3f3
+    /* background: #f3f3f3 */ /*Theme change*/
 }
 
 .experience-row {
@@ -515,7 +515,7 @@ a.active {
 =================================================*/
 #publications {
     padding: 100px 0;
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
 }
 
 .publication-item img {  
@@ -538,12 +538,36 @@ a.active {
     color: white;
     background-color: rgb(64, 132, 196);
 }
+/* Theme Chane */
+.section{
+    background-color: black;
+}
+.section p{
+    color: white;
+}
+.section h1{
+    color: white;
+}
+.section h2{
+    color: white;
+}
+
+.section h4{
+    color: white;
+}
+.section h5{
+    color: white;
+}
+.section h6{
+    color: white;
+}
+
 
 /* achievements section 
 ================================================== */
 #achievements{
     padding: 100px 0;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .carousel-indicators .active{
@@ -744,7 +768,7 @@ footer {
 
 #contact {
     padding: 100px 0;
-    background: #f3f3f3
+    /* background: #f3f3f3 */ /*Theme change*/
 }
 
 #contact-form input,
@@ -856,7 +880,8 @@ fieldset {
 }
 
 .social li a {
-    color: rgb(104, 104, 104);
+    /* color: rgb(104, 104, 104); */
+    color: white;
     font-size: 35px;
     margin-right: 15px;
     transition: all .3s;
