@@ -157,3 +157,57 @@ span.highlight {
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
+
+.popup-modal {
+  background: #fff;
+}
+
+.close-popup-modal {
+  float: right;
+  margin: 20px;
+  font-size: 22px;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transition-delay: .6s;
+  transition-delay: .6s;
+  position: fixed;
+  z-index: 100000;
+  right: 14px;
+}
+
+.animatedModal-on .close-popup-modal {
+  opacity: 1;
+}
+
+.modal-content {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.modal-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.portfolio_filter {
+  padding-left: 0;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-padding {
+  padding: 50px 0;
+}
+
+.portfolio-inner {
+  padding-bottom: 0 !important;
+  padding-top: 55px;
+}
+
+.h-50 {
+  height: 50px;
+}
