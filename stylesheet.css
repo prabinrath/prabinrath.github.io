@@ -84,6 +84,14 @@ a {
   font-size: 14px
 }
 
+td img {
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
@@ -118,6 +126,14 @@ name {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+.two video {
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fade {
