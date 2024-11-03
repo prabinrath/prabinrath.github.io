@@ -157,3 +157,34 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Timeline Container */
+.timeline {
+  max-height: 100px; /* Limit height to make it scrollable */
+  overflow-y: auto;
+  padding-right: 1em; /* Space for scrollbar */
+  padding-left: 1em;
+}
+
+.timeline p {
+  font-style: normal;
+  font-size: small;
+  color: #555;
+  line-height: 1.4; /* Adjusted line height to reduce vertical space within each entry */
+  margin-bottom: 0.4em; /* Reduced gap between timeline points */
+}
+
+.timeline-date {
+  font-weight: 700;
+  color: #888;
+  margin-right: 0.5em;
+}
+
+.timeline a {
+  color: #0073e6; /* Link color */
+  text-decoration: none;
+}
+
+.timeline a:hover {
+  text-decoration: underline;
+}
