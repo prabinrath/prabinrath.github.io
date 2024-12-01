@@ -175,9 +175,15 @@ span.highlight {
 }
 
 .timeline-date {
-  font-weight: 700;
-  color: #888;
+  color: #484747;
   margin-right: 0.5em;
+  font-weight: bolder;
+}
+
+.timeline-info {
+  color: #555;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .timeline a {
