@@ -63,6 +63,286 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* Base Styles */
+body { 
+  background-color: #FAFAFA; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body, td, p, heading, name, papertitle {
+  font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 1px;
+  padding: 4px 10px 4px 8px;
+  color: #303030;
+  background-color: #BBDEFB;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn .material-icons { 
+  font-size: 1.2em; 
+}
+
+.btn:hover {
+  background-color: #316CAD;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-publication {
+  background-color: #C8E6C9;
+}
+
+.btn-publication:hover { 
+  background-color: #2E7D32; 
+  color: #fff; 
+}
+
+/* News Styles */
+.news-date { 
+  font-weight: 500; 
+  color: #316CAD; 
+}
+
+.news-item-title { 
+  font-weight: 600; 
+}
+
+.news-highlight-red { 
+  font-weight: 600; 
+  color: #EF5350; 
+}
+
+/* Description and BibTeX Styles */
+.description { 
+  display: block; 
+  margin: 4px 0; 
+  color: #555; 
+  font-style: italic; 
+  padding: 4px 0; 
+}
+
+.bibtex {
+  max-height: 0; 
+  opacity: 0; 
+  overflow-x: auto;
+  margin-top: 0; 
+  padding: 0 4px;
+  background-color: #fff3e0; 
+  border-left: 4px solid #ffb300;
+  font-family: monospace; 
+  white-space: pre-wrap; 
+  font-size: small;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.bibtex.show { 
+  max-height: 200px; 
+  opacity: 1; 
+  margin-top: 4px; 
+  padding: 4px; 
+}
+
+/* Link Styles */
+a { 
+  color: #1E88E5; 
+  text-decoration: none; 
+}
+
+a:hover, a:focus { 
+  color: #316CAD; 
+  text-decoration: underline; 
+}
+
+/* Publications Table */
+.publications-table { 
+  margin-top: 20px; 
+  border-collapse: separate; 
+  border-spacing: 0 20px; 
+}
+
+.publications-table tr td img { 
+  max-width: 150px; 
+  max-height: 125px; 
+  border-radius: 8%; 
+  transition: border-radius 0.2s ease-in-out; 
+}
+
+.publications-table tr td img:hover { 
+  border-radius: 12%; 
+}
+
+/* Typography */
+heading {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+papertitle {
+  font-weight: bold;
+  color: #316CAD;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+/* Layout Styles */
+.bio-name, .bio-links {
+  text-align: center;
+}
+
+.profile-pic-container img {
+  border-radius: 15px;
+  height: 250px;
+  display: block;
+  margin: auto; 
+}
+
+/* Desktop Layout (CSS Grid) */
+@media screen and (min-width: 769px) {
+  .main-layout {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "name    picture"
+      "bio     picture";
+    gap: 0 20px;
+    align-items: center;
+  }
+  .bio-name { grid-area: name; }
+  .left-column { grid-area: bio; }
+  .profile-pic-container { grid-area: picture; }
+}
+
+/* Mobile Styles (Flexbox) */
+@media screen and (max-width: 768px) {
+  .main-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .bio-name { order: 1; }
+  .profile-pic-container { order: 2; padding: 20px 0; }
+  .left-column { order: 3; }
+
+  .pub-image, .pub-details {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .pub-image img {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+}
+
+/* Modal Styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background: rgba(0,0,0,0.6); 
+  justify-content: center; 
+  align-items: center;
+}
+
+.modal-content {
+  position: relative; 
+  background: #000; 
+  padding: 0; 
+  border-radius: 8px;
+  max-width: 50vw; 
+  max-height: 50vh; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  animation: dropIn 0.3s ease-out; 
+  overflow: hidden;
+}
+
+.modal-content video { 
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+.close-btn {
+  position: absolute; 
+  top: 12px; 
+  right: 12px;
+  width: 32px; 
+  height: 32px; 
+  line-height: 32px; 
+  text-align: center;
+  font-size: 20px; 
+  color: #fff; 
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 6px; 
+  cursor: pointer; 
+  z-index: 10;
+}
+
+.close-btn:hover { 
+  background-color: rgba(0,0,0,1); 
+}
+
+/* News Container Styles */
+.news-scroll-container {
+  max-height: 115px;
+  overflow-y: scroll;
+  padding-right: 5px;
+  margin-top: 4px;
+}
+
+.news-scroll-container::-webkit-scrollbar { 
+  width: 8px; 
+}
+
+.news-scroll-container::-webkit-scrollbar-track { 
+  background-color: #f0f0f0; 
+  border-radius: 4px; 
+}
+
+.news-scroll-container::-webkit-scrollbar-thumb { 
+  background-color: #c1c1c1; 
+  border-radius: 4px; 
+}
+
+.news-scroll-container::-webkit-scrollbar-thumb:hover { 
+  background-color: #a8a8a8; 
+}
+
+/* Animations */
+@keyframes dropIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Legacy styles for maintaining compatibility */
 sh {
   font-family: 'Lato';
   font-size: 22px;
@@ -73,27 +353,6 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
 }
 
 td img {
@@ -109,17 +368,7 @@ strong {
   font-size: 14px;
 }
 
-heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-}
-
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
-}
-
+/* Image hover effects */
 .one {
   width: 160px;
   height: 160px;
@@ -149,61 +398,20 @@ papertitle {
   -webkit-transition: opacity .2s ease-in-out;
 }
 
-span.highlight {
+span.highlight, .highlight {
   background-color: #ffffd0;
 }
 
-/* Timeline Container */
-.timeline {
-  max-height: 100px; /* Limit height to make it scrollable */
-  overflow-y: auto;
-  padding-right: 1em; /* Space for scrollbar */
-  padding-left: 1em;
-}
-
-.timeline p {
-  font-style: normal;
-  font-size: small;
-  color: #555;
-  line-height: 1.4; /* Adjusted line height to reduce vertical space within each entry */
-  margin-bottom: 0.4em; /* Reduced gap between timeline points */
-}
-
-.timeline-date {
-  color: #484747;
-  margin-right: 0.5em;
-  font-weight: bolder;
-}
-
-.timeline-info {
-  color: #555;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.timeline a {
-  color: #0073e6; /* Link color */
-  text-decoration: none;
-}
-
-.timeline a:hover {
-  text-decoration: underline;
-}
-
-.name-container {
-  text-align: center;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  margin: 0; 
-}
-
+/* Custom Odia text styles */
 .odia-text {
-  font-family: 'Noto Sans Oriya', sans-serif;
+  font-family: 'Noto Sans Oriya', 'Noto Sans Devanagari', 'Noto Sans', sans-serif !important;
   cursor: pointer;
   text-decoration: none;
-  /* color: #2563eb; */
   font-size: 32px;
   position: relative;
+  display: inline-block;
+  font-weight: bold !important;
+  unicode-bidi: isolate;
 }
 
 .tooltip {
@@ -238,4 +446,48 @@ span.highlight {
 .odia-text:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+/* Timeline styles (legacy, keeping for compatibility) */
+.timeline {
+  max-height: 100px;
+  overflow-y: auto;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.timeline p {
+  font-style: normal;
+  font-size: small;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 0.4em;
+}
+
+.timeline-date {
+  color: #484747;
+  margin-right: 0.5em;
+  font-weight: bolder;
+}
+
+.timeline-info {
+  color: #555;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.timeline a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.timeline a:hover {
+  text-decoration: underline;
+}
+
+.name-container {
+  text-align: center;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  margin: 0; 
 }

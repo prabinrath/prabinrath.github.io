@@ -1,425 +1,412 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel='icon' type='image/jpg' href='data/favicon.png'>
 
   <title>Prabin Kumar Rath</title>
-  
-  <meta name="author" content="Jon Barron">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="data/favicon.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
-	<!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle" align="justify">
-              <p class="name-container">
-                Prabin (<a href="https://en.wikipedia.org/wiki/Odia_language" class="odia-text" target="_blank">ପ୍ରବୀଣ<span class="tooltip">My name in my native language, Odia</span></a>) Kumar Rath
+  <div id='videoModal' class='modal'>
+    <div class='modal-content'>
+      <span class='close-btn' onclick='closeModal()'>&times;</span>
+      <video id='modalVideo' controls>
+        <source src='' type='video/mp4'>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <br/>
+  <table style='max-width: 900px; width: 90%; margin: auto;' border='0' cellspacing='0' cellpadding='0'>
+    <tr>
+      <td>
+        <div class="main-layout">
+
+            <div class="bio-name">
+              <p>
+                <name>Prabin (<a href="https://en.wikipedia.org/wiki/Odia_language" class="odia-text" target="_blank">ପ୍ରବୀଣ<span class="tooltip">My name in my native language, Odia</span></a>) Kumar Rath</name><br>
+                <span style="font-size: 16px; color: #444;">prath4 at asu dot edu</span>
               </p>
-              <p>I'm a Ph.D. student in Computer Science at 
+            </div>
+          
+          <div class="left-column">
+            <div class="bio-text">
+              <p align='justify'>I'm a Ph.D. student in Computer Science at 
                 <a target="_blank" href="https://www.asu.edu/">Arizona State University</a> advised 
-                by <a target="_blank" href="https://nakulgopalan.github.io/">Prof. Nakul Gopalan</a> in 
-                <a target="_blank" href="https://logos-robotics-lab.github.io/">Logos Lab</a> group. My core interests include robot learning, 
+                by <a target="_blank" href="https://nakulgopalan.github.io/">Prof. Nakul Gopalan</a>. My core interests include robot learning, 
                 3D perception and software engineering.</p>
 
-              <p>For my Master's thesis, I worked on learned motion planning for robotic manipulators. 
+              <p align='justify'>For my Master's thesis, I worked on learned motion planning for robotic manipulators. 
                 I developed deep learning-based behavior cloning algorithms that <i>zero-shot</i> generalize 
                 to configuration-space of unseen robotic arms. My work involved generating large-scale synthetic 
-                datasets, training robot policies, and developing 3D collision detection models for neural motion planning. 
-                <!-- I also collaborated with <a target="_blank" href="https://search.asu.edu/profile/866744">Prof. Hongbin Yu</a> 
-                at the <a target="_blank" href="https://evsts.asu.edu/">EVSTS Lab</a>, focusing on the application of 
-                3D object detection and tracking algorithms for quantifying AI safety. Specifically, I analyzed unsafe situations for
-                 vulnerable road users such as pedestrians and cyclists at urban traffic intersections.</p> -->
-
-              <p>I received my Bachelor's in Computer Science and Engineering from 
+                datasets, training robot policies, and developing 3D collision detection models for neural motion planning.
+                I received my Bachelor's in Computer Science and Engineering from 
                 <a target="_blank" href="https://www.nitrkl.ac.in/">National Institute of Technology, Rourkela</a> 
-                in Spring 2020. 
-                <!-- During my undergrad, I interned at the <a target="_blank" href="https://ucalgary.ca/">University of Calgary</a> 
-                with <a target="_blank" href="https://profiles.ucalgary.ca/alejandro-ramirez-serrano">Prof. Alex Ramirez Serrano</a>, 
-                to work on 3D moving object detection techniques for collision-free robot navigation in indoor environments. Prior to that, 
-                I interned with <a target="_blank" href="https://www.iitkgp.ac.in/department/ME/faculty/me-dkpra">Prof. Dilip Kumar Pratihar</a> 
-                at <a target="_blank" href="https://www.iitkgp.ac.in/">IIT Kharagpur</a>, where I developed PID controllers for teleoperation 
-                of a custom bipedal robot to mimic human gait patterns. After graduation, I worked for two years at 
-                Wells Fargo as a software engineer, developing scalable OCR pipelines for data extraction from scanned 
-                forms and handwritten documents.</p> -->
+                in Spring 2020.</p>
 
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a target="_blank" href="data/pro_pic.jpg"><img style="width:180px;height:180px;border-radius:50%;object-fit:cover;" alt="profile photo" src="data/pro_pic.jpg" class="hoverZoomLink"></a>
-              <p style="text-align:center">
-                <a target="_blank" href="data/Prabin_Rath_CV.pdf"><strong>CV</strong></a> &nbsp/&nbsp
-                <a target="_blank" href="https://github.com/prabinrath"><strong>Github</strong></a> &nbsp/&nbsp
-                <a target="_blank" href="https://scholar.google.com/citations?user=J7I-MQoAAAAJ&hl=en&oi=ao"><strong>Scholar</strong></a> &nbsp/&nbsp
-                <a target="_blank" href="https://www.linkedin.com/in/prabin-kumar-rath-225b12130/"><strong>LinkedIn</strong></a> &nbsp/&nbsp
-                <a target="_blank" href="https://www.researchgate.net/profile/Prabin-Rath"><strong>ResearchGate</strong></a>
+              <p align='justify'>I love connecting with others about research, and collaborating on ideas. Feel free to get in touch!</p>
+            </div>
+            
+            <div class="bio-links">
+              <p>
+                <a href='data/Prabin_Rath_CV.pdf' class='btn' target="_blank"> <span class='material-icons'>picture_as_pdf</span> CV</a>
+                <a href='https://scholar.google.com/citations?user=J7I-MQoAAAAJ&hl=en&oi=ao' class='btn' target='_blank'> <span class='material-icons'>school</span> Google Scholar</a>
+                <a href='https://www.linkedin.com/in/prabin-kumar-rath-225b12130/' class='btn' target='_blank'> <span class='material-icons'>business</span> LinkedIn</a>
+                <a href='https://github.com/prabinrath' class='btn' target='_blank'> <span class='material-icons'>code</span> GitHub</a>
+                <a href='https://www.researchgate.net/profile/Prabin-Rath' class='btn' target='_blank'> <span class='material-icons'>science</span> ResearchGate</a>
               </p>
-              Email: <a target="_blank" href="mailto:prath4@asu.edu">prath4@asu.edu</a>
+            </div>
+          </div> 
+          
+          <div class="profile-pic-container">
+            <img src='data/pro_pic.jpg' alt='Profile Picture'>
+          </div>
+
+        </div>
+        
+        <h2>News</h2>
+        <div class="news-scroll-container">
+          <table width='100%' border='0' cellspacing='0' cellpadding='2'>
+            <tr>
+              <td width='10%' valign='top'><span class='news-date'>Aug '25</span></td>
+              <td width='90%' valign='top'>🎓 Joined <span class="news-item-title">Ph.D. program in Computer Science at ASU</span>.</td>
+            </tr>
+            <tr>
+              <td width='10%' valign='top'><span class='news-date'>Jun '25</span></td>
+              <td width='90%' valign='top'>🎉 FDP abstract paper accepted at <span class="news-item-title">RSS 2025 <a href="https://rss25-roboreps.github.io/" target="_blank">RoboReps</a> Workshop</span>.</td>
+            </tr>
+            <tr>
+              <td width='10%' valign='top'><span class='news-date'>Jan '25</span></td>
+              <td width='90%' valign='top'>🎉 XMoP full paper accepted to <span class="news-item-title"><a href="https://2025.ieee-icra.org/" target="_blank">ICRA 2025</a></span>.</td>
+            </tr>
+            <tr>
+              <td width='10%' valign='top'><span class='news-date'>Jun '24</span></td>
+              <td width='90%' valign='top'>💼 Joined Experian as an <span class="news-item-title">MLOps Engineer</span> to work on low-latency inference orchestration and data pipelines.</td>
+            </tr>
+            <tr>
+              <td width='10%' valign='top'><span class='news-date'>Jun '24</span></td>
+              <td width='90%' valign='top'>🎉 XMoP abstract paper accepted at <span class="news-item-title">RSS 2024 Workshop</span> on <a href="https://earl.robot-learning.net/" target="_blank">Embodiment-Aware Robot Learning</a>.</td>
+            </tr>
+            <tr>
+              <td width='10%' valign='top'><span class='news-date'>Apr '24</span></td>
+              <td width='90%' valign='top'>🏆 Successfully defended my Master's thesis, <span class="news-item-title">"AnyNMP: Generative Cross-Embodiment Neural Motion Planning"</span>.</td>
+            </tr>
+            <tr>
+              <td width='10%' valign='top'><span class='news-date'>Mar '24</span></td>
+              <td width='90%' valign='top'>🎉 Technical report on AI safety evaluation for AVs accepted at <span class="news-item-title">SAE WCX 2024</span>.</td>
+            </tr>
+          </table>
+        </div>
+
+        <h2>Research</h2>
+        <p>My current research interest is in robot learning, with a focus on developing robot foundation models that generalize to unseen domains. 
+        I believe such models can ultimately scale robotics by enabling proactive learning from one-shot or few-shot demonstration prompts,
+         eliminating the need for explicit retraining. Here are some of my recent and past works in robotics, 
+         computer vision, and the Internet of Things (selective papers are <span class="highlight">highlighted</span>):</p>
+
+        <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <div class="one">
+                <div class="two">
+                  <video  width=100% height=100% muted autoplay loop>
+                    <source src="data/publications/fdp.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>Learning Factorized Diffusion Policies for Conditional Action Diffusion</papertitle><br>
+              Omkar Patil, <b>Prabin Kumar Rath</b>, Kartikay Milind Pangaonkar, Eric Rosen, Nakul Gopalan<br>
+              <em>Under Review</em><br>
+              <em>RSS RoboReps Workshop</em>, 2025
+
+              <div class="description">
+                We present a theoretical framework to learn action diffusion models without the need to jointly condition on all input modalities. Our method is robust to deploy against visual distractors and appearance changes, maintaining strong performance even under significant visual disruptions and outperforming standard diffusion policies by over 40%.
+              </div>
+
+              <a href="https://fdp-policy.github.io/fdp-policy/" class="btn btn-publication" target="_blank"><span class="material-icons">language</span> Website</a>
             </td>
           </tr>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <div class="one">
+                <div class="two">
+                  <video  width=100% height=100% muted autoplay loop>
+                    <source src="data/publications/xmop.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>XMoP: Whole-Body Control Policy for Zero-shot Cross-Embodiment Neural Motion Planning</papertitle><br>
+              <b>Prabin Kumar Rath</b>, Nakul Gopalan<br>
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2025<br>
+              <em>RSS Workshop on Embodiment-Aware Robot Learning</em>, 2024
+
+              <div class="description">
+                A novel neural policy that solves motion planning problems zero-shot for unseen robotic manipulators. We demonstrate for the first time that configuration-space behavior cloning policies can be learned without embodiment bias and that these learned behaviors can be transferred to novel unseen embodiments in a zero-shot manner.
+              </div>
+
+              <a href="https://arxiv.org/abs/2409.15585" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> arXiv</a>
+              <a href="https://prabinrath.github.io/xmop/" class="btn btn-publication" target="_blank"><span class="material-icons">language</span> Website</a>
+              <a href="https://github.com/prabinrath/xmop" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <div class="one">
+                <div class="two">
+                  <video  width=100% height=100% muted autoplay loop>
+                    <source src="data/publications/pcd_car_ped.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>Evaluating Safety Metrics for Vulnerable Road Users at Urban Traffic Intersections Using High-Density Infrastructure LiDAR System</papertitle><br>
+              <b>Prabin Kumar Rath</b>, Blake Harrison, Duo Lu, Yezhou Yang, Jeffrey Wishart, Hongbin Yu<br>
+              <em>SAE World Congress Experience</em>, 2024
+
+              <div class="description">
+                Real-time VRU safety metrics evaluation strategies for urban traffic intersections.
+              </div>
+
+              <a href="https://www.researchgate.net/profile/Jeffrey-Wishart/publication/379690237_Rath_Wishart_et_al_2024_-_Evaluating_Safety_Metrics_for_VRUs_at_Urban_Traffic_Intersections_using_Infrastructure_LIDAR/links/66155eb943f8df018deadc72/Rath-Wishart-et-al-2024-Evaluating-Safety-Metrics-for-VRUs-at-Urban-Traffic-Intersections-using-Infrastructure-LIDAR.pdf" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+              <a href="https://github.com/prabinrath/vru-intersection-safety" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <img src="data/publications/drone_leader_follower.png" width="150">
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>Validation and Analysis of Driving Safety Assessment Metrics in Real-world Car-Following Scenarios with Aerial Videos</papertitle><br>
+              Duo Lu, Sam Haines, Varun Chandra Jammula, <b>Prabin Kumar Rath</b>, Hongbin Yu, Yezhou Yang, Jeffrey Wishart<br>
+              <em>SAE World Congress Experience</em>, 2024
+
+              <div class="description">
+                Leader-follower pair identification and metrics evaluation from aerial drone videos.
+              </div>
+
+              <a href="https://www.researchgate.net/profile/Jeffrey-Wishart/publication/379690232_Lu_Wishart_et_al_2024_-_Validation_and_Analysis_of_DA_Metrics_in_Real-World_Car-Following_Scenarios_w_Aerial_Videos/links/66155e7343f8df018deadc5e/Lu-Wishart-et-al-2024-Validation-and-Analysis-of-DA-Metrics-in-Real-World-Car-Following-Scenarios-w-Aerial-Videos.pdf" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <img src="data/publications/vehicleLIDAR.png" width="150">
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>Comparison of Infrastructure-and Onboard Vehicle-Based Sensor Systems in Measuring Operational Safety Assessment (OSA) Metrics</papertitle><br>
+              Siddharth Das, <b>Prabin Kumar Rath</b>, Duo Lu, Tyler Smith, Jeffrey Wishart, Hongbin Yu<br>
+              <em>SAE World Congress Experience</em>, 2023
+
+              <div class="description">
+                Complex-YOLO 3D detection and EKF tracking pipeline for measuring intersection safety metrics with CAROM dataset as pseudo ground truth.
+              </div>
+
+              <a href="https://www.researchgate.net/profile/Jeffrey-Wishart/publication/369995840_Comparison_of_Infrastructure-_and_Onboard_Vehicle-Based_Sensor_Systems_in_Measuring_Operational_Safety_Assessment_OSA_Metrics/links/6438ecabad9b6d17dc5798c7/Comparison-of-Infrastructure-and-Onboard-Vehicle-Based-Sensor-Systems-in-Measuring-Operational-Safety-Assessment-OSA-Metrics.pdf" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <img src="data/publications/healthMonitoring.png" width="150">
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>Design and Performance Analysis of an IoT Based Health Monitoring System for Hospital Management</papertitle><br>
+              <b>Prabin Kumar Rath</b>, Neelam Mahapatro, Subham Sahoo and Suchismita Chinara<br>
+              <em>IEEE International Conference on Computing Communication and Intelligent Systems</em>, 2021
+
+              <div class="description">
+                An IoT health kit for hospitals to assist doctors with medical diagnosis.
+              </div>
+
+              <a href="https://www.researchgate.net/publication/350940004_Design_and_Performance_Analysis_of_an_IoT_Based_Health_Monitoring_System_for_Hospital_Management/" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+              <a href="https://github.com/prabinrath/HealthKit" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <img src="data/publications/movingObjectDetection.png" width="150">
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>Real-time moving object detection and removal from 3D pointcloud data for humanoid navigation in dense GPS‐denied environments</papertitle><br>
+              <b>Prabin Kumar Rath</b>, Alejandro Ramirez-Serrano, and Dilip Kumar Pratihar<br>
+              <em>Engineering Reports</em>, 2020
+
+              <div class="description">
+                Detection and Tracking of Moving Objects (DATMO) algorithm for robot navigation in dynamic environments.
+              </div>
+
+              <a href="https://www.researchgate.net/publication/344706216_Real-time_moving_object_detection_and_removal_from_3D_pointcloud_data_for_humanoid_navigation_in_dense_GPS-denied_environments" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+              <a href="https://github.com/prabinrath/dynamicslamtool" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <img src="data/publications/roomAutomationModule.png" width="150">
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>Automation System for Secure Remote Control and Surveillance</papertitle><br>
+              <b>Prabin Kumar Rath</b>, Neelam Mahapatro and Soumya Nandan Mishra<br>
+              <em>IEEE International Conference on Computer Electrical & Communication Engineering</em>, 2020
+
+              <div class="description">
+                Room Automation Module for switching electrical appliances remotely through Web, Bluetooth, and IR.
+              </div>
+
+              <a href="https://www.researchgate.net/publication/344706615_Automation_System_for_Secure_Remote_Control_and_Surveillance" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+              <a href="https://github.com/prabinrath/Room_Automation" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="20%" class="pub-image">
+              <div class="one">
+                <div class="two">
+                  <img src='data/background/background3.jpg' width="160" height="160"></div>
+                <img src='data/portfolio/chess_image.jpg' width="160" height="160">
+              </div>
+            </td>
+            <td width="70%" valign="top" class="pub-details">
+              <papertitle>Autonomous Chess Playing Robot</papertitle><br>
+              <b>Prabin Kumar Rath</b>, Neelam Mahapatro, Prasanmit Nath and Ratnakar Dash<br>
+              <em>International Conference on Robot & Human Interactive Communication (RO-MAN)</em>, 2019
+              <span style="color: #EF5350; font-weight: 600;"> &mdash; Listed under top 10 projects in Quest Ingenium 2018</span>
+
+              <div class="description">
+                A robot for playing the game of chess physically with an user. Powered with strong chess engines and interactive UI it provides all virtual game features while ensuring the authenticity of the original board game.
+              </div>
+
+              <a href="https://www.researchgate.net/publication/338590711_Autonomous_Chess_Playing_Robot" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+              <a href="https://www.youtube.com/watch?v=RYqMDQ5mVBQ" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
+              <a href="https://github.com/prabinrath/Roborex_Chess" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+            </td>
+          </tr>
+
         </table>
+        <h2>Software Projects</h2>
+        <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
 
-        <hr/>
-        <table width="100%" align="center" border="0" cellspacing="0">
-          <sh>&nbsp;&nbsp;&nbsp;&nbsp;News </sh></td>
-          <div class="timeline">
-            <p><span class="timeline-date">August 2025</span> Joined Ph.D. program in Computer Science at ASU.</span></p>
-            <p><span class="timeline-date">January 2025</span> XMoP full paper accepted at <span class="timeline-info">ICRA 2025</span>.</p>
-            <p><span class="timeline-date">June 2024</span> Joined Experian as an <span class="timeline-info">MLOps Engineer</span> to work on low-latency inference orchestration and data pipelines.</p>
-            <p><span class="timeline-date">June 2024</span> XMoP abstract paper accepted at <span class="timeline-info">RSS 2024 Workshop</span> on Embodiment-Aware Robot Learning.</p>
-            <p><span class="timeline-date">April 2024</span> Successfully defended my Master's thesis, <span class="timeline-info">"AnyNMP: Generative Cross-Embodiment Neural Motion Planning"</span>.</p>
-            <p><span class="timeline-date">March 2024</span> Technical report on AI safety evaluation for AVs accepted at <span class="timeline-info">SAE WCX 2024</span>.</p>
-          </div>        
-        </table>
-
-        <hr/>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-          <tr><td><sh>&nbsp;&nbsp;Research </sh></td></tr>
-        </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-          <tr><td>
-            My current research interest is in robot learning, with a focus on developing robot foundation models that generalize to unseen domains. 
-            I believe such models can ultimately scale robotics by enabling proactive learning from one-shot or few-shot demonstration prompts,
-             eliminating the need for explicit retraining. Here are some of my recent and past works in robotics, 
-             computer vision, and the Internet of Things (selective papers are <span class="highlight">highlighted</span>): 
-          </td></tr>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>		
-
-            <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two">
-                    <video  width=100% height=100% muted autoplay loop>
-                      <source src="data/publications/fdp.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://fdp-policy.github.io/fdp-policy/">
-                  <papertitle>Learning Factorized Diffusion Policies for Conditional Action Diffusion</papertitle>
-                </a>
-                <br>
-                  Omkar Patil, <strong>Prabin Kumar Rath</strong>, Kartikay Milind Pangaonkar, Eric Rosen, Nakul Gopalan
-                <br>
-                <i><span style="color: #600000;">Under Review</span></i>
-                <br>
-                <i><span style="color: #600000;">RSS RoboReps Workshop, 2025</span></i>
-                <br>
-                <!-- <a target="_blank" href="">arXiv</a> / -->
-                <a target="_blank" href="https://fdp-policy.github.io/fdp-policy/">site</a>
-                <!-- <a target="_blank" href="https://github.com/fdp-policy">code</a> -->
-                <p>
-                  We present a theoretical framework to learn action diffusion models without the need to jointly condition on all input modalities. Our method is robust to deploy against visual distractors and appearance changes, maintaining strong performance even under significant visual disruptions and outperforming standard diffusion policies by over 40%.
-                </p>
-              </td>
-            </tr>
-            
-            <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two">
-                    <video  width=100% height=100% muted autoplay loop>
-                      <source src="data/publications/xmop.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://prabinrath.github.io/xmop/">
-                  <papertitle>XMoP: Whole-Body Control Policy for Zero-shot Cross-Embodiment Neural Motion Planning</papertitle>
-                </a>
-                <br>
-                <strong>Prabin Kumar Rath</strong>, Nakul Gopalan
-                <br>
-                <i><span style="color: #600000;">International Conference on Robotics and Automation (ICRA), 2025</span></i>
-                <br>
-                <i><span style="color: #600000;">RSS Workshop on Embodiment-Aware Robot Learning, 2024</span></i>
-                <br>
-                <a target="_blank" href="https://arxiv.org/abs/2409.15585">arXiv</a> /
-                <a target="_blank" href="https://prabinrath.github.io/xmop/">site</a> /
-                <a target="_blank" href="https://github.com/prabinrath/xmop">code</a>
-                <p>
-                  A novel neural policy that solves motion planning problems zero-shot for unseen robotic manipulators. We demonstrate for the first time that configuration-space behavior cloning policies can be learned without embodiment bias and that these learned behaviors can be transferred to novel unseen embodiments in a zero-shot manner.
-                </p>
-              </td>
-            </tr>
-
-            <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two">
-                    <video  width=100% height=100% muted autoplay loop>
-                      <source src="data/publications/pcd_car_ped.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://www.sae.org/publications/technical-papers/content/2024-01-2641/">
-                  <papertitle>Evaluating Safety Metrics for Vulnerable Road Users at Urban Traffic Intersections Using High-Density Infrastructure LiDAR System</papertitle>
-                </a>
-                <br>
-                <strong>Prabin Kumar Rath</strong>, Blake Harrison, Duo Lu, Yezhou Yang, Jeffrey Wishart, Hongbin Yu
-                <br>
-                <i><span style="color: #600000;">SAE World Congress Experience, 2024</span></i>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/profile/Jeffrey-Wishart/publication/379690237_Rath_Wishart_et_al_2024_-_Evaluating_Safety_Metrics_for_VRUs_at_Urban_Traffic_Intersections_using_Infrastructure_LIDAR/links/66155eb943f8df018deadc72/Rath-Wishart-et-al-2024-Evaluating-Safety-Metrics-for-VRUs-at-Urban-Traffic-Intersections-using-Infrastructure-LIDAR.pdf">paper</a> /
-                <a target="_blank" href="https://github.com/prabinrath/vru-intersection-safety">code</a>
-                <p>
-                  Real-time VRU safety metrics evaluation strategies for urban traffic intersections. 
-                </p>
-              </td>
-            </tr>
-
-            <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <img src= "data/publications/drone_leader_follower.png" width="160" height="160">
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://www.sae.org/publications/technical-papers/content/2024-01-2020/">
-                  <papertitle>Validation and Analysis of Driving Safety Assessment Metrics in Real-world Car-Following Scenarios with Aerial Videos</papertitle>
-                </a>
-                <br>
-                Duo Lu, Sam Haines, Varun Chandra Jammula, <strong>Prabin Kumar Rath</strong>, Hongbin Yu, Yezhou Yang, Jeffrey Wishart
-                <br>
-                <i><span style="color: #600000;">SAE World Congress Experience, 2024</span></i>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/profile/Jeffrey-Wishart/publication/379690232_Lu_Wishart_et_al_2024_-_Validation_and_Analysis_of_DA_Metrics_in_Real-World_Car-Following_Scenarios_w_Aerial_Videos/links/66155e7343f8df018deadc5e/Lu-Wishart-et-al-2024-Validation-and-Analysis-of-DA-Metrics-in-Real-World-Car-Following-Scenarios-w-Aerial-Videos.pdf">paper</a>
-                <p>
-                  Leader-follower pair identification and metrics evaluation from aerial drone videos. 
-                </p>
-              </td>
-            </tr>
-    
-            <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <img src= "data/publications/vehicleLIDAR.png" width="160" height="160">
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://www.sae.org/publications/technical-papers/content/2023-01-0858/">
-                  <papertitle>Comparison of Infrastructure-and Onboard Vehicle-Based Sensor Systems in Measuring Operational Safety Assessment (OSA) Metrics</papertitle>
-                </a>
-                <br>
-                Siddharth Das, <strong>Prabin Kumar Rath</strong>, Duo Lu, Tyler Smith, Jeffrey Wishart, Hongbin Yu
-                <br>
-                <i><span style="color: #600000;">SAE World Congress Experience, 2023</span></i>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/profile/Jeffrey-Wishart/publication/369995840_Comparison_of_Infrastructure-_and_Onboard_Vehicle-Based_Sensor_Systems_in_Measuring_Operational_Safety_Assessment_OSA_Metrics/links/6438ecabad9b6d17dc5798c7/Comparison-of-Infrastructure-and-Onboard-Vehicle-Based-Sensor-Systems-in-Measuring-Operational-Safety-Assessment-OSA-Metrics.pdf">paper</a>
-                <p>
-                  Complex-YOLO 3D detection and EKF tracking pipeline for measuring intersection safety metrics with <a target="_blank" href="https://github.com/duolu/CAROM">CAROM</a> dataset as pseudo ground truth.
-                </p>
-              </td>
-            </tr>
-
-            <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='samurai_image'>
-                    <img src='data/publications/healthMonitoring.png' width="160" height="140"></div>
-                  <img src='data/publications/healthMonitoring.png' width="160" height="140">
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J7I-MQoAAAAJ&citation_for_view=J7I-MQoAAAAJ:W7OEmFMy1HYC">
-                  <papertitle>Design and Performance Analysis of an IoT Based Health Monitoring System for Hospital Management</papertitle>
-                </a>
-                <br>
-                <strong>Prabin Kumar Rath</strong>, Neelam Mahapatro, Subham Sahoo and Suchismita Chinara
-                <br>
-                <i><span style="color: #600000;">IEEE International Conference on Computing Communication and Intelligent Systems, 2021</span></i>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/publication/350940004_Design_and_Performance_Analysis_of_an_IoT_Based_Health_Monitoring_System_for_Hospital_Management/">paper</a> /
-                <a target="_blank" href="https://github.com/prabinrath/HealthKit">code</a>
-                <p>
-                  An IoT health kit for hospitals to assist doctors with medical diagnosis.
-                </p>
-              </td>
-            </tr>	
-            
-            <tr onmouseout="db3d_stop()" onmouseover="db3d_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <img src='data/publications/movingObjectDetection.png' width="160" height="160">
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J7I-MQoAAAAJ&citation_for_view=J7I-MQoAAAAJ:9yKSN-GCB0IC">
-                  <papertitle>Real-time moving object detection and removal from 3D pointcloud data for humanoid navigation in dense GPS‐denied environments</papertitle>
-                </a>
-                <br>
-                <strong> Prabin Kumar Rath </strong>, Alejandro Ramirez-Serrano, and Dilip Kumar Pratihar
-                <br>
-                <i><span style="color: #600000;">Engineering Reports, 2020</span></i>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/publication/344706216_Real-time_moving_object_detection_and_removal_from_3D_pointcloud_data_for_humanoid_navigation_in_dense_GPS-denied_environments">paper</a> / 
-                <a target="_blank" href="https://github.com/prabinrath/dynamicslamtool">code</a>
-                <p>Detection and Tracking of Moving Objects (DATMO) algorithm for robot navigation in dynamic environments.</p>
-              </td>
-            </tr>
-
-            <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='mira_image'>
-                    <img src='data/publications/roomAutomationModule.png' width="160" height="140"></div>
-                  <img src='data/publications/roomAutomationModule.png' width="160" height="140">
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J7I-MQoAAAAJ&citation_for_view=J7I-MQoAAAAJ:qjMakFHDy7sC">
-                  <papertitle>Automation System for Secure Remote Control and Surveillance</papertitle>
-                </a>
-                <br>
-                <strong>Prabin Kumar Rath</strong>, Neelam Mahapatro and Soumya Nandan Mishra
-                <br>
-                <i><span style="color: #600000;">IEEE International Conference on Computer Electrical & Communication Engineering, 2020</span></i>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/publication/344706615_Automation_System_for_Secure_Remote_Control_and_Surveillance">paper</a> /
-                <a target="_blank" href="https://github.com/prabinrath/Room_Automation">code</a> 
-                <p>
-                  Room Automation Module for switching electrical appliances remotely through Web, Bluetooth, and IR.
-                </p>
-              </td>
-            </tr>
-                
-            <tr onmouseout="chessbot_stop()" onmouseover="chessbot_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="one">
-                    <div class="two">
-                      <img src='data/background/background3.jpg' width="160" height="160"></div>
-                    <img src='data/portfolio/chess_image.jpg' width="160" height="160">
-                  </div>
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J7I-MQoAAAAJ&citation_for_view=J7I-MQoAAAAJ:u5HHmVD_uO8C">
-                  <papertitle>Autonomous Chess Playing Robot</papertitle>
-                </a>
-                <br>
-                <strong>Prabin Kumar Rath</strong>, Neelam Mahapatro, Prasanmit Nath and Ratnakar Dash
-                <br>
-                <i><span style="color: #600000;">International Conference on Robot & Human Interactive Communication (RO-MAN), 2019</span></i> 
-                &nbsp <font color="red"><strong>(Listed under top 10 projects in Quest Ingenium 2018)</strong></font>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/publication/338590711_Autonomous_Chess_Playing_Robot">paper</a> /
-                <a target="_blank" href="https://www.youtube.com/watch?v=RYqMDQ5mVBQ">video</a> /
-                <a target="_blank" href="https://github.com/prabinrath/Roborex_Chess">code</a>                
-                <p>
-                  A robot for playing the game of chess physically with an user. Powered with strong chess engines and interactive UI it provides all virtual game features while ensuring the authenticity of the original board game.
-                </p>
-              </td>
-            </tr>	
-
-          </tbody>
-        </table>
-				
-        <hr/>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tbody>
             <tr>
-              <td>
-                <sh>Software Projects</sh>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/asu_pattern_video.gif" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>Shaped-Swarm</papertitle><br>
+                <em>Arizona State University</em>, 2023
+
+                <div class="description">
+                  Multi-robot swarm controller for pattern formation using Signed Distance Field (SDF) of hand drawn images.
+                </div>
+
+                <a href="https://www.researchgate.net/publication/377237049_Signed_Distance_Field-based_Implicit_Navigation_for_Pattern_Generation_with_Robotic_Swarm" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+                <a href="https://youtu.be/3jnHYCTu6z0?si=xXZot8HBjaMmPQhs" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
+                <a href="https://github.com/prabinrath/shaped-swarm" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
             </tr>
-          </tbody>
-        </table>
-        <table width="100%" align="center" border="0" cellpadding="20">
-          <tbody>	
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/asu_pattern_video.gif" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Shaped-Swarm</papertitle>
-                <br>
-                <em>Arizona State University, 2023</em>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/publication/377237049_Signed_Distance_Field-based_Implicit_Navigation_for_Pattern_Generation_with_Robotic_Swarm">paper</a> /
-                <a target="_blank" href="https://youtu.be/3jnHYCTu6z0?si=xXZot8HBjaMmPQhs">video</a> /
-                <a target="_blank" href="https://github.com/prabinrath/shaped-swarm">code</a>
-                <br>
-                <p>Multi-robot swarm controller for pattern formation using Signed Distance Field (SDF) of hand drawn images.</p>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/hc_better.gif" width="150">
               </td>
-            </tr>	
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/hc_better.gif" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Beyond-Demonstration</papertitle>
-                <br>
-                <em>Arizona State University, 2023</em>
-                <br>
-                <a target="_blank" href="https://github.com/prabinrath/Beyond-Demonstration">code</a>
-                <br>
-                <p>Implementation of T-REX and D-REX Inverse Reinforcement Learning (IRL) algorithms for learning form suboptimal demonstrations.</p>
-              </td>
-            </tr>	
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/breakout_trained.gif" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Deep Q-Learning</papertitle>
-                <br>
-                <em>Arizona State University, 2022</em>
-                <br>
-                <a target="_blank" href="https://github.com/prabinrath/Deep-Q-Learning">code</a>
-                <br>
-                <p>Deep Reinforcement Learning with PyTorch and OpenAI-Gym. Implementation of Deep-Q-Learning and Dueling Double Deep-Q-Learning Algorithms.</p>
-              </td>
-            </tr>		
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/win_large.gif" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Reflex-MCTS: A hybrid MCTS agent for playing Pacman</papertitle>
-                <br>
-                <em>Arizona State University, 2022</em>
-                <br>
-                <a target="_blank" href="https://github.com/prabinrath/Monte-Carlo-Tree-Search-ExMachina">code</a>
-                <br>
-                <p>An AI agent that utilizes Monte Carlo Tree Search (MCTS) for exploration and exploitation but switches to customized reflex actions at critical zones.</p>
-              </td>
-            </tr>	
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/traffic_flow.png" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Traffic Flow Prediction with Spatio-Temporal ResNet</papertitle>
-                <br>
-                <em>Arizona State University, 2022</em>
-                <br>
-                <a target="_blank" href="https://github.com/prabinrath/Traffic-Flow-Prediction">code</a>
-                <br>
-                <p>Implementation of ST-ResNet model for predicting traffic flow on BikeNYC and TaxiBJ datasets.</p>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>Beyond-Demonstration</papertitle><br>
+                <em>Arizona State University</em>, 2023
+
+                <div class="description">
+                  Implementation of T-REX and D-REX Inverse Reinforcement Learning (IRL) algorithms for learning form suboptimal demonstrations.
+                </div>
+
+                <a href="https://github.com/prabinrath/Beyond-Demonstration" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
             </tr>
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="data/portfolio/navigation.gif" width="160" height="130">
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/breakout_trained.gif" width="150">
               </td>
-              <td width="75%" valign="center">
-                <papertitle>2D SLAM and Navigation Stack in Gazebo</papertitle>
-                <br>
-                <em>NIT Rourkela, 2021</em>
-                <br>
-                <a target="_blank" href="https://github.com/prabinrath/armbot_nav">code</a>
-                <br>
-                <p>A tutorial for integrating ROS navigation and mapping stack with your custom differential drive robot.</p>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>Deep Q-Learning</papertitle><br>
+                <em>Arizona State University</em>, 2022
+
+                <div class="description">
+                  Deep Reinforcement Learning with PyTorch and OpenAI-Gym. Implementation of Deep-Q-Learning and Dueling Double Deep-Q-Learning Algorithms.
+                </div>
+
+                <a href="https://github.com/prabinrath/Deep-Q-Learning" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
-            </tr>		
+            </tr>
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/win_large.gif" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>Reflex-MCTS: A hybrid MCTS agent for playing Pacman</papertitle><br>
+                <em>Arizona State University</em>, 2022
+
+                <div class="description">
+                  An AI agent that utilizes Monte Carlo Tree Search (MCTS) for exploration and exploitation but switches to customized reflex actions at critical zones.
+                </div>
+
+                <a href="https://github.com/prabinrath/Monte-Carlo-Tree-Search-ExMachina" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/traffic_flow.png" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>Traffic Flow Prediction with Spatio-Temporal ResNet</papertitle><br>
+                <em>Arizona State University</em>, 2022
+
+                <div class="description">
+                  Implementation of ST-ResNet model for predicting traffic flow on BikeNYC and TaxiBJ datasets.
+                </div>
+
+                <a href="https://github.com/prabinrath/Traffic-Flow-Prediction" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/navigation.gif" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>2D SLAM and Navigation Stack in Gazebo</papertitle><br>
+                <em>NIT Rourkela</em>, 2021
+
+                <div class="description">
+                  A tutorial for integrating ROS navigation and mapping stack with your custom differential drive robot.
+                </div>
+
+                <a href="https://github.com/prabinrath/armbot_nav" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="20%" class="pub-image">
                 <div class="one">
                   <div class="two">
                     <video  width=100% height=100% muted autoplay loop>
@@ -429,32 +416,38 @@
                   </div>
                 </div>
               </td>
-              <td width="75%" valign="center">
-                <papertitle>The Cartpole Control Problem</papertitle>
-                <br>
-                <em>NIT Rourkela, 2021</em>
-                <br>
-                <a target="_blank" href="https://youtu.be/c03xXi8UCio">video</a> /
-                <a target="_blank" href="https://github.com/prabinrath/Learning-Robotics-Matlab">code</a>
-                <br>
-                <p>Trajectory optimization for the cart pole swing-up problem using Direct collocation, and balancing the inverted pendulum on the cart using LQR control.</p>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>The Cartpole Control Problem</papertitle><br>
+                <em>NIT Rourkela</em>, 2021
+
+                <div class="description">
+                  Trajectory optimization for the cart pole swing-up problem using Direct collocation, and balancing the inverted pendulum on the cart using LQR control.
+                </div>
+
+                <a href="https://youtu.be/c03xXi8UCio" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
+                <a href="https://github.com/prabinrath/Learning-Robotics-Matlab" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
             </tr>
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/command.png" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Robot Command Interpretation</papertitle>
-                <br>
-                <em>NIT Rourkela, 2020</em>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/publication/355807682_Control_Approaches_For_Mobile_Robots_With_Mounted_Robotic_Arm">paper</a> /
-                <a target="_blank" href="https://github.com/prabinrath/robot-command-interpretation">code</a>
-                <br>
-                <p>Simple LSTM model for classifying colloquial english sentences onto motion commands. Curated text to command dataset for model training using Tensorflow.</p>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/command.png" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>Robot Command Interpretation</papertitle><br>
+                <em>NIT Rourkela</em>, 2020
+
+                <div class="description">
+                  Simple LSTM model for classifying colloquial english sentences onto motion commands. Curated text to command dataset for model training using Tensorflow.
+                </div>
+
+                <a href="https://www.researchgate.net/publication/355807682_Control_Approaches_For_Mobile_Robots_With_Mounted_Robotic_Arm" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+                <a href="https://github.com/prabinrath/robot-command-interpretation" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
             </tr>
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td width="20%" class="pub-image">
                 <div class="one">
                   <div class="two">
                     <video  width=100% height=100% muted autoplay loop>
@@ -464,35 +457,26 @@
                   </div>
                 </div>
               </td>
-              <td width="75%" valign="center">
-                <papertitle>End Effector Stabilization of Robotic Arms</papertitle>
-                <br>
-                <em>NIT Rourkela, 2020</em>
-                <br>
-                <a target="_blank" href="https://www.researchgate.net/publication/355807682_Control_Approaches_For_Mobile_Robots_With_Mounted_Robotic_Arm">paper</a> /
-                <a target="_blank" href="https://youtu.be/66R0jPZouVk">video</a> /
-                <a target="_blank" href="https://github.com/prabinrath/fist_lab_arm">code</a>
-                <br>
-                <p>Mathematical modelling of end effector pitch. Closed-loop PID control for canceling the base motion effects on the end effector.</p>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>End Effector Stabilization of Robotic Arms</papertitle><br>
+                <em>NIT Rourkela</em>, 2020
+
+                <div class="description">
+                  Mathematical modelling of end effector pitch. Closed-loop PID control for canceling the base motion effects on the end effector.
+                </div>
+
+                <a href="https://www.researchgate.net/publication/355807682_Control_Approaches_For_Mobile_Robots_With_Mounted_Robotic_Arm" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
+                <a href="https://youtu.be/66R0jPZouVk" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
+                <a href="https://github.com/prabinrath/fist_lab_arm" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
             </tr>
-          </tbody>
+
         </table>
-        <hr/>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tbody>
+        <h2>Hardware Projects</h2>
+        <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
+
             <tr>
-              <td>
-                <sh>Hardware Projects</sh>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <table width="100%" align="center" border="0" cellpadding="20">
-          <tbody>		
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- <img src="data/portfolio/cube_stack_arm.jpeg" width="160" height="130"> -->
+              <td width="20%" class="pub-image">
                 <div class="one">
                   <div class="two">
                       <video  width=100% height=100% muted autoplay loop>
@@ -502,130 +486,107 @@
                     </div>
                 </div>
               </td>
-              <td width="75%" valign="center">
-                <papertitle>4-DOF Cube Stacking Arm</papertitle>
-                <br>
-                <em>Arizona State University, 2023</em>
-                <br>
-                <a target="_blank" href="https://youtu.be/Clo4RHUKKaA">video</a> /
-                <a target="_blank" href="https://github.com/prabinrath/cube_stack_env">code</a>
-                <br>
-                <p>Customized replica of Turtlebot arm for pick and place tasks. ROS Control and MoveIt stack. Gym compatible environment for training RL agent in Gazebo.</p>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>4-DOF Cube Stacking Arm</papertitle><br>
+                <em>Arizona State University</em>, 2023
+
+                <div class="description">
+                  Customized replica of Turtlebot arm for pick and place tasks. ROS Control and MoveIt stack. Gym compatible environment for training RL agent in Gazebo.
+                </div>
+
+                <a href="https://youtu.be/Clo4RHUKKaA" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
+                <a href="https://github.com/prabinrath/cube_stack_env" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
             </tr>
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/auv.png" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Autonomous Underwater Vehicle (AUV), Team Tiburon</papertitle>
-                <br>
-                <em>NIT Rourkela, 2019</em>
-                <br>
-                <a target="_blank" href="https://youtu.be/vOylmHolfH0">video</a> /
-                <a target="_blank" href="https://auvnitrkl.github.io/">site</a> 
-                <br>
-                <p>6DOF holonomic robot with integrated vision sensors for carrying out planned missions autonomously in underwater environments.</p>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/auv.png" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>Autonomous Underwater Vehicle (AUV), Team Tiburon</papertitle><br>
+                <em>NIT Rourkela</em>, 2019
+
+                <div class="description">
+                  6DOF holonomic robot with integrated vision sensors for carrying out planned missions autonomously in underwater environments.
+                </div>
+
+                <a href="https://youtu.be/vOylmHolfH0" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
+                <a href="https://auvnitrkl.github.io/" class="btn btn-publication" target="_blank"><span class="material-icons">language</span> Website</a>
               </td>
             </tr>
-            <!-- <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/rov.jpg" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Underwater ROV</papertitle>
-                <br>
-                <em>NIT Rourkela, 2018</em>
-                <br>
-                <a target="_blank" href="https://www.youtube.com/embed/7OgH7KmpCG4">video</a> 
-                <br>
-                <p>A ROV (Remotely Operated Vehicle) for underwater exploration which can be controlled from an Android app.</p>
-              </td>
-            </tr> -->
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/dotMatrixPrinter.jpg" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>2D Dot Matrix Printer</papertitle>
-                <br>
-                <em>NIT Rourkela, 2018</em>
-                <br>
-                <a target="_blank" href="https://www.youtube.com/embed/DudBchBL2wo">video</a> /
-                <a target="_blank" href="https://github.com/prabinrath/Arduino_Projects">code</a>
-                <br>
-                <p>A 2D Dot matrix printer is a DIY project made from old CD drives.</p>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/dotMatrixPrinter.jpg" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>2D Dot Matrix Printer</papertitle><br>
+                <em>NIT Rourkela</em>, 2018
+
+                <div class="description">
+                  A 2D Dot matrix printer is a DIY project made from old CD drives.
+                </div>
+
+                <a href="https://www.youtube.com/embed/DudBchBL2wo" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
+                <a href="https://github.com/prabinrath/Arduino_Projects" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
             </tr>
-            <!-- <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/terranBot.png" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Adaptive Rough Terran Bot</papertitle>
-                <br>
-                <em>IIT Kharagpur, 2018</em>
-                <br>
-                <a target="_blank" href="https://www.youtube.com/embed/MGdWmmlzG-0">video</a>
-                <br>
-                <p>A manual robot capable of changing inter-wheel distance so as to cover roads of variable width. It also has the capability to grip and lift objects.</p>
-              </td>
-            </tr> -->
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/wirelessBot.png" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Semi Autonomous Wireless Bot</papertitle>
-                <br>
-                <em>IIT Kharagpur, 2017</em>
-                <br>
-                <a target="_blank" href="https://www.youtube.com/embed/Ir5Be_2lIv8">video</a> 
-                <br>
-                <p>A Bluetooth controlled robot with on board FSR (Force Sensitive Resistor) for weight detection. It has indication LEDs to prompt the user about the detected weights.</p>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/wirelessBot.png" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>Semi Autonomous Wireless Bot</papertitle><br>
+                <em>IIT Kharagpur</em>, 2017
+
+                <div class="description">
+                  A Bluetooth controlled robot with on board FSR (Force Sensitive Resistor) for weight detection. It has indication LEDs to prompt the user about the detected weights.
+                </div>
+
+                <a href="https://www.youtube.com/embed/Ir5Be_2lIv8" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
               </td>
             </tr>
+
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/ledCube.jpg" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>8*8*8 LED Cube</papertitle>
-                <br>
-                <em>NIT Rourkela, 2017</em>
-                <br>
-                <a target="_blank" href="https://www.youtube.com/embed/p_xQauBz7h0">video</a> /
-                <a target="_blank" href="https://github.com/prabinrath/Arduino_Projects">code</a>
-                <br>
-                <p>A 8*8*8 LED cube made using 9 shift registers 74HC595 and Arduino Nano.</p>
+              <td width="20%" class="pub-image">
+                <img src="data/portfolio/ledCube.jpg" width="150">
+              </td>
+              <td width="70%" valign="top" class="pub-details">
+                <papertitle>8*8*8 LED Cube</papertitle><br>
+                <em>NIT Rourkela</em>, 2017
+
+                <div class="description">
+                  A 8*8*8 LED cube made using 9 shift registers 74HC595 and Arduino Nano.
+                </div>
+
+                <a href="https://www.youtube.com/embed/p_xQauBz7h0" class="btn btn-publication" target="_blank"><span class="material-icons">play_circle</span> Video</a>
+                <a href="https://github.com/prabinrath/Arduino_Projects" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
               </td>
             </tr>
-            <!-- <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="data/portfolio/IRDetectorBot.png" width="160" height="130"></td>
-              <td width="75%" valign="center">
-                <papertitle>Manual Robot with IR Obstacle Detector</papertitle>
-                <br>
-                <em>NIT Rourkela, 2016</em>
-                <br>
-                <a target="_blank" href="https://www.youtube.com/embed/ZxR40xoD42Q">video</a>
-                <br>
-                <p>A manual robot with IR obstacle detection ability which is controlled through a remote made from DPDT switches.</p>
-              </td>
-            </tr>             -->
-          </tbody>
+
         </table> 
-        
       </td>
     </tr>
   </table>
 
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:0px">
-        <br>
-        <p style="text-align:center;font-size:small;">
-          Webpage template taken from <a target="_blank" href="https://github.com/mihdalal/mihdalal.github.io">here</a>. <strong>Do not</strong> scrape the HTML from this page.
-        </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
+  <script>
+    function toggleBib(id) { document.getElementById(id).classList.toggle('show'); }
+    function openModal(src) {
+      var modal = document.getElementById('videoModal');
+      var videoEl = document.getElementById('modalVideo');
+      videoEl.querySelector('source').src = src; videoEl.load(); modal.style.display = 'flex';
+    }
+    function closeModal() {
+      var modal = document.getElementById('videoModal');
+      var videoEl = document.getElementById('modalVideo');
+      videoEl.pause(); modal.style.display = 'none';
+    }
+    document.getElementById('videoModal').addEventListener('click', function (e) {
+      if (e.target === this) closeModal();
+    });
+  </script>
 </body>
 
 </html>
-
-<!--
-  // Create Another Page for Certificates
-  // Create Another HTML page for Projects and videos
-
--->
