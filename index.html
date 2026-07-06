@@ -41,7 +41,7 @@
             <div class="bio-text">
               <p align="left">
                 I am a first-year Ph.D. student in Computer Science at Arizona State University, advised by <a target="_blank" href="https://nakulgopalan.github.io/">Prof. Nakul Gopalan</a>. 
-                I work on Robot Learning, with a focus on building algorithms that help robots learn generalizable skills and operate reliably in uncertain and previously unseen settings.
+                I work on learning algorithms that help robots acquire generalizable and reliable skills beyond their training distribution. My long-term goal is to build systems that transfer reusable skills across bodies, tasks, and environments with minimal retraining.
               </p>
 
               <p align="left">
@@ -51,7 +51,7 @@
               </p>
 
               <p align="left">
-                I’m always happy to connect for research collaborations. Feel free to reach out!
+                I’m always looking forward to research collaborations. Feel free to reach out!
               </p>
             </div>
 
@@ -121,12 +121,11 @@
         </div>
 
         <h2>Research</h2>
-        <p>Lately I've been thinking about cross-embodiment generalization, long horizon memory for robot policies, and post-training policy improvement methods. Here are some of my recent and past works in robotics, 
-         computer vision, and the Internet of Things (selective papers are <span class="highlight">highlighted</span>):</p>
+        <p>Lately I've been thinking about cross-embodiment generalization, long horizon memory for robot policies, and post-training policy improvement methods. Here are some recent works that represent my current research direction. Few of my favorites are <span class="highlight">highlighted</span>.</p>
 
         <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
 
-          <tr>
+          <tr class="pub-highlight-soft">
             <td width="20%" class="pub-image">
               <div class="one">
                 <div class="two">
@@ -152,7 +151,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-highlight-soft">
             <td width="20%" class="pub-image">
               <div class="one">
                 <div class="two">
@@ -199,11 +198,32 @@
                 A novel neural policy that solves motion planning problems zero-shot for unseen robotic manipulators. We demonstrate for the first time that configuration-space behavior cloning policies can be learned without embodiment bias and that these learned behaviors can be transferred to novel unseen embodiments in a zero-shot manner.
               </div>
 
-              <a href="https://arxiv.org/pdf/2409.15585" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> arXiv</a>
+              <a href="https://arxiv.org/pdf/2409.15585" class="btn btn-publication" target="_blank"><span class="material-icons">picture_as_pdf</span> Paper</a>
               <a href="https://prabinrath.github.io/xmop/" class="btn btn-publication" target="_blank"><span class="material-icons">language</span> Website</a>
               <a href="https://github.com/prabinrath/xmop" class="btn btn-publication" target="_blank"><span class="material-icons">code</span> Code</a>
             </td>
           </tr>
+
+        </table>
+
+        <div class="research-tabs" role="tablist" aria-label="Additional work sections">
+          <button class="research-tab" type="button" role="tab" aria-selected="false" aria-controls="past-research-panel" id="past-research-tab" data-tab="past-research-panel">
+            <span class="tab-icon material-icons" aria-hidden="true">article</span>
+            <span>Past Research</span>
+          </button>
+          <button class="research-tab" type="button" role="tab" aria-selected="false" aria-controls="software-projects-panel" id="software-projects-tab" data-tab="software-projects-panel">
+            <span class="tab-icon material-icons" aria-hidden="true">code</span>
+            <span>Software Projects</span>
+          </button>
+          <button class="research-tab" type="button" role="tab" aria-selected="false" aria-controls="hardware-projects-panel" id="hardware-projects-tab" data-tab="hardware-projects-panel">
+            <span class="tab-icon material-icons" aria-hidden="true">memory</span>
+            <span>Hardware Projects</span>
+          </button>
+        </div>
+
+        <section id="past-research-panel" class="tab-panel" role="tabpanel" aria-labelledby="past-research-tab" hidden>
+          <h2>Past Research</h2>
+          <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
 
           <tr>
             <td width="20%" class="pub-image">
@@ -342,9 +362,12 @@
             </td>
           </tr>
 
-        </table>
-        <h2>Software Projects</h2>
-        <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
+          </table>
+        </section>
+
+        <section id="software-projects-panel" class="tab-panel" role="tabpanel" aria-labelledby="software-projects-tab" hidden>
+          <h2>Software Projects</h2>
+          <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
 
             <tr>
               <td width="20%" class="pub-image">
@@ -510,9 +533,12 @@
               </td>
             </tr>
 
-        </table>
-        <h2>Hardware Projects</h2>
-        <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
+          </table>
+        </section>
+
+        <section id="hardware-projects-panel" class="tab-panel" role="tabpanel" aria-labelledby="hardware-projects-tab" hidden>
+          <h2>Hardware Projects</h2>
+          <table style='width: 100%; table-layout: fixed;' border='0' cellspacing='0' cellpadding='5' class='publications-table'>
 
             <tr>
               <td width="20%" class="pub-image">
@@ -605,10 +631,15 @@
               </td>
             </tr>
 
-        </table> 
+          </table>
+        </section>
       </td>
     </tr>
   </table>
+
+  <footer class="site-footer">
+    Website template adapted from <a href="https://jonbarron.info/" target="_blank">Jon Barron's portfolio page</a>.
+  </footer>
 
   <script>
     function toggleBib(id) { document.getElementById(id).classList.toggle('show'); }
@@ -624,6 +655,26 @@
     }
     document.getElementById('videoModal').addEventListener('click', function (e) {
       if (e.target === this) closeModal();
+    });
+    function showTabbedSection(panelId) {
+      var tabs = document.querySelectorAll('.research-tab');
+      var panels = document.querySelectorAll('.tab-panel');
+
+      tabs.forEach(function (tab) {
+        var selected = tab.getAttribute('data-tab') === panelId;
+        tab.classList.toggle('active', selected);
+        tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+      });
+
+      panels.forEach(function (panel) {
+        panel.hidden = panel.id !== panelId;
+      });
+    }
+
+    document.querySelectorAll('.research-tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        showTabbedSection(tab.getAttribute('data-tab'));
+      });
     });
   </script>
 </body>

@@ -175,15 +175,16 @@ a:hover, a:focus {
   border-spacing: 0 20px; 
 }
 
-.publications-table tr td img { 
-  max-width: 150px; 
-  max-height: 125px; 
-  border-radius: 8%; 
-  transition: border-radius 0.2s ease-in-out; 
-}
-
-.publications-table tr td img:hover { 
-  border-radius: 12%; 
+.publications-table .pub-image img,
+.publications-table .pub-image video {
+  width: 160px;
+  height: 160px;
+  max-width: 160px;
+  max-height: 160px;
+  border: 1px solid #111;
+  border-radius: 15px;
+  display: block;
+  object-fit: cover;
 }
 
 /* Typography */
@@ -238,6 +239,27 @@ h2 {
 
 /* Mobile Styles (Flexbox) */
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body > table {
+    display: block;
+    width: calc(100% - 28px) !important;
+    max-width: calc(100% - 28px) !important;
+    margin: 0 auto !important;
+  }
+
+  body > table > tbody,
+  body > table > tbody > tr,
+  body > table > tbody > tr > td {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .main-layout {
     display: flex;
     flex-direction: column;
@@ -248,13 +270,45 @@ h2 {
 
   .pub-image, .pub-details {
     display: block;
-    width: 100%;
+    width: 100% !important;
     text-align: left;
+  }
+
+  .publications-table,
+  .publications-table tbody,
+  .publications-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .publications-table td {
+    box-sizing: border-box;
+  }
+
+  .pub-image {
+    text-align: center;
+  }
+
+  .pub-details,
+  papertitle {
+    overflow-wrap: anywhere;
   }
   
   .pub-image img {
     display: block;
     margin: 0 auto 10px auto;
+  }
+
+  .one {
+    margin: 0 auto 10px auto;
+  }
+
+  .research-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .research-tab {
+    justify-content: flex-start;
   }
 }
 
@@ -358,8 +412,6 @@ hr {
 td img {
   border-radius: 15px;
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -385,11 +437,8 @@ strong {
 }
 
 .two video {
-  border-radius: 15px;
-  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .fade {
@@ -417,6 +466,121 @@ span.highlight, .highlight {
 .publications-table tr.pub-featured td:last-child {
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+}
+
+.publications-table tr.pub-highlight-soft td {
+  background-color: #F2F8F3;
+  box-shadow: 0 3px 10px rgba(75, 111, 86, 0.08);
+}
+
+.publications-table tr.pub-highlight-soft td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-left: 6px solid #79A878;
+}
+
+.publications-table tr.pub-highlight-soft td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.research-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 20px 0 8px;
+}
+
+.research-tab {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 70px;
+  padding: 8px 18px 8px 10px;
+  border: 1px solid #D6DFE8;
+  border-radius: 999px;
+  background-color: #F8FAFC;
+  color: #2F2F2F;
+  font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(40, 40, 40, 0.07);
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.research-tab::after {
+  content: "\203A";
+  margin-left: auto;
+  color: #316CAD;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.research-tab .tab-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid #C8D8E8;
+  background-color: #FFFFFF;
+  color: #316CAD;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 31px;
+  flex: 0 0 auto;
+}
+
+.research-tab:hover,
+.research-tab:focus {
+  background-color: #EEF5FB;
+  border-color: #8CB7DA;
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(49, 108, 173, 0.12);
+}
+
+.research-tab.active {
+  background-color: #E7F1FA;
+  border-color: #316CAD;
+  color: #252525;
+  box-shadow: 0 10px 24px rgba(49, 108, 173, 0.15);
+}
+
+.research-tab.active .tab-icon {
+  border-color: #316CAD;
+  background-color: #316CAD;
+  color: #FFFFFF;
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
+.tab-panel h2 {
+  margin-top: 18px;
+}
+
+.site-footer {
+  width: 90%;
+  max-width: 900px;
+  margin: 64px auto 52px;
+  padding-top: 20px;
+  border-top: 1px solid #E0E0E0;
+  color: #777;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .research-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .research-tab {
+    justify-content: flex-start;
+  }
 }
 
 /* Custom Odia text styles */
