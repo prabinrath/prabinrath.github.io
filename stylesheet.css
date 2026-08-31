@@ -103,6 +103,65 @@ body, td, p, heading, name, papertitle {
   text-decoration: none;
 }
 
+/* CV Hover Dropdown */
+.cv-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cv-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 100%;
+  padding: 4px;
+  margin-top: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Keeps the menu reachable while moving the cursor down from the button */
+.cv-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+.cv-dropdown:hover .cv-menu,
+.cv-dropdown:focus-within .cv-menu {
+  display: block;
+}
+
+.cv-menu a {
+  display: block;
+  padding: 5px 12px;
+  color: #303030;
+  border-radius: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.cv-menu a:hover,
+.cv-menu a:focus {
+  background-color: #316CAD;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cv-dropdown:hover > .btn,
+.cv-dropdown:focus-within > .btn {
+  background-color: #316CAD;
+  color: #fff;
+}
+
 .btn-publication {
   background-color: #C8E6C9;
 }
@@ -486,41 +545,43 @@ span.highlight, .highlight {
 
 .research-tabs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin: 20px 0 8px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 660px;
+  margin: 20px auto 8px;
 }
 
 .research-tab {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 9px;
   width: 100%;
-  min-height: 70px;
-  padding: 8px 18px 8px 10px;
+  min-height: 46px;
+  padding: 5px 12px 5px 6px;
   border: 1px solid #D6DFE8;
   border-radius: 999px;
   background-color: #F8FAFC;
   color: #2F2F2F;
   font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(40, 40, 40, 0.07);
+  box-shadow: 0 4px 12px rgba(40, 40, 40, 0.07);
   transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .research-tab::after {
   content: "\203A";
   margin-left: auto;
+  padding-left: 6px;
   color: #316CAD;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1;
 }
 
 .research-tab .tab-icon {
-  width: 54px;
-  height: 54px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   border: 1px solid #C8D8E8;
   background-color: #FFFFFF;
@@ -528,7 +589,7 @@ span.highlight, .highlight {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 31px;
+  font-size: 20px;
   flex: 0 0 auto;
 }
 
@@ -538,14 +599,14 @@ span.highlight, .highlight {
   border-color: #8CB7DA;
   outline: none;
   transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(49, 108, 173, 0.12);
+  box-shadow: 0 7px 16px rgba(49, 108, 173, 0.12);
 }
 
 .research-tab.active {
   background-color: #E7F1FA;
   border-color: #316CAD;
   color: #252525;
-  box-shadow: 0 10px 24px rgba(49, 108, 173, 0.15);
+  box-shadow: 0 7px 18px rgba(49, 108, 173, 0.15);
 }
 
 .research-tab.active .tab-icon {
