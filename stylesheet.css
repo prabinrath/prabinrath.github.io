@@ -186,6 +186,11 @@ body, td, p, heading, name, papertitle {
   color: #EF5350; 
 }
 
+.pub-spotlight { 
+  font-weight: bold; 
+  color: #EF5350; 
+}
+
 /* Description and BibTeX Styles */
 .description { 
   display: block; 
