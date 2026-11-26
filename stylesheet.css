@@ -236,7 +236,18 @@ a:hover, a:focus {
 .publications-table { 
   margin-top: 20px; 
   border-collapse: separate; 
-  border-spacing: 0 20px; 
+  border-spacing: 0 20px;
+}
+
+.pub-note {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+  margin: 0 0 -12px;
+}
+
+.pub-note + .publications-table {
+  margin-top: 0;
 }
 
 .publications-table .pub-image img,
@@ -365,6 +376,10 @@ h2 {
 
   .one {
     margin: 0 auto 10px auto;
+  }
+
+  .pub-note {
+    margin-bottom: 8px;
   }
 
   .research-tabs {
